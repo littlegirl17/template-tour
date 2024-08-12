@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+     <!-- font awesome cdn -->
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="header_top1">
+                <div class="header-img">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div> 
+                <div class="header-sign">
+                    <ul>
+                    <li><i class="fa fa-user" aria-hidden="true"></i><a href="login.html">Đăng nhập</a></li>
+                    <li><i class="fa fa-registered" aria-hidden="true"></i><a href="logup.html">Đăng kí</a></li>
+                    </ul>
+                </div>
+                <div class="header-select">
+                    <select onchange="change(this.value)">
+                        <option value="black" selected>Đen</option>
+                        <option value="white">Trắng</option>
+                        <option value="#aeadad">Xám</option>
+                        <option value="rgba(201, 76, 76, 0.3)">Hồng</option>
+                        
+                    </select>
+                </div>
+                <label for="header-mobile-input" class="header-sort">
+                    <i class="fa-sharp fa-solid fa-sort-down"></i>
+                </label>
+              
+                <input type="checkbox" hidden  name="" class="header__input" id="header-mobile-input">
+                <label for="header-mobile-input" class="header-overlay"></label>
+    
+                <div class="header--sign-mobile">
+                    <ul>
+                        <i class="fa-solid fa-right-to-bracket"></i><a href="login.html">Đăng nhập</a></li>
+                        <li><i class="fa fa-registered" aria-hidden="true"></i><a href="logup.html">Đăng kí</a></li>
+                    </ul>
+                    <div class="header--select-mobile">
+                        <select onchange="change(this.value)"> 
+                            <option value="black" selected>black</option>
+                            <option value="white">white</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+      
+    
+    <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+    <nav class="nav">
+            <div class="container-nav">
+                <div class="nav_list">
+                    <ul>
+                        <li class="category-list">
+                            <a href="index.html">Trang chủ</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </li>
+                        <li class="category-list-one">
+                            <a href="">Địa điểm </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-one">
+                                <li><a href="">Bình Định</a></li>
+                                <li><a href="">Bình Dương</a></li>
+                                <li><a href="">SaPa</a></li>
+                                <li><a href="">Miền Tây</a></li>
+                                <li><a href="">Bình Định</a></li>
+                                <li><a href="">Bình Dương</a></li>
+                                <li><a href="">SaPa</a></li>
+                                <li><a href="">Miền Tây</a></li>
+                                <li><a href="">Bình Định</a></li>
+                                <li><a href="">Bình Dương</a></li>
+                                <li><a href="">SaPa</a></li>
+                                <li><a href="">Miền Tây</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-list-two">
+                            <a href="">Ngày khởi hành </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-two">
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-list-three">
+                            <a href="">Thời gian </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-three">
+                                <li><a href="">1 ngày</a></li>
+                                <li><a href="">2 ngày</a></li>
+                                <li><a href="">3 ngày</a></li>
+                                <li><a href="">5 ngày</a></li>
+                                <li><a href="">6 ngày</a></li>
+                                <li><a href="">7 ngày</a></li>
+                                <li><a href="">8 ngày</a></li>
+                                <li><a href="">9 ngày</a></li>
+                                <li><a href="">10 ngày</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-list-four">
+                            <a href="">Giá tiền</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-four">
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <label for="nav-mobile-input" class="nav-bars">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <label for="nav-mobile-input" hidden>check</label>
+                <input type="checkbox" hidden name="" class="nav_input" id="nav-mobile-input">
+                
+                <label for="nav-mobile-input" class="nav-overlay"></label>
+                
+                <div class="nav_list-mobile">
+                    <label for="nav-mobile-input" class="nav-close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </label>
+                    <ul>
+                        <li class="cattegory-list">
+                            <a href="">Trang chủ</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </li>
+                        <li class="cattegory-list-one-mobile">
+                            <a href="">Địa điểm </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-one-mobile">
+                                <li><a href="">Bình Định</a></li>
+                                <li><a href="">Bình Dương</a></li>
+                                <li><a href="">SaPa</a></li>
+                                <li><a href="">Miền Tây</a></li>
+                                <li><a href="">Bình Định</a></li>
+                                <li><a href="">Bình Dương</a></li>
+                                <li><a href="">SaPa</a></li>
+                                <li><a href="">Miền Tây</a></li>
+                                <li><a href="">Bình Định</a></li>
+                                <li><a href="">Bình Dương</a></li>
+                                <li><a href="">SaPa</a></li>
+                                <li><a href="">Miền Tây</a></li>
+                            </ul> 
+                        </li>
+                        <li class="cattegory-list-two-mobile">
+                            <a href="">Ngày khởi hành </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-two-mobile">
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                                <li><a href="">Ngày KH:01/07/2003</a></li>
+                            </ul>
+                        </li>
+                        <li class="cattegory-list-three-mobile">
+                            <a href="">Thời gian </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-three-mobile">
+                                <li><a href="">1 ngày</a></li>
+                                <li><a href="">2 ngày</a></li>
+                                <li><a href="">3 ngày</a></li>
+                                <li><a href="">5 ngày</a></li>
+                                <li><a href="">6 ngày</a></li>
+                                <li><a href="">7 ngày</a></li>
+                                <li><a href="">8 ngày</a></li>
+                                <li><a href="">9 ngày</a></li>
+                                <li><a href="">10 ngày</a></li>
+                            </ul>
+                        </li>
+                        <li class="cattegory-list-four-mobile">
+                            <a href="">Giá tiền</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-list--menu-four-mobile">
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                                <li><a href="">1.000.000 VND</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="dat-tour-1">
+                <div class="dat-tour-1-img">
+                    <img src="img/hue6.jpg" alt="">
+                </div>
+                <div class="dat-tour-1-right">
+                    <div class="right-table">
+                        <div class="right-table-top1">
+                            <h2>Du lịch Hè - Tour Du lịch Hà Nội - Sapa - Fansipan từ Sài Gòn 2023</h2>
+                        </div>
+                        <div class="right-table-top2">
+                           <ul>
+                                <li><a href="">Mã tour</a></li>
+                                <li><a href="">16539</a></li>
+                           </ul>
+                           <ul>
+                            <li><a href="">Thời gian:</a></li>
+                            <li><a href="">3 ngày 2 đêm</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Khởi hành:</a></li>
+                                <li><a href="">26/05</a></li>
+                           </ul>
+                           <ul>
+                            <li><a href="">Xuất phát:</a></li>
+                            <li><a href="">Từ Hồ Chí Minh</a></li>
+                       </ul>
+                       <ul>
+                        <li><a href="">Giá:</a></li>
+                        <li><a href="">7,399,000 đ</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="dat-tour-2">
+                <p>Các khoản phí phát sinh (nếu có) như: phụ thu dành cho khách nước ngoài, việt kiều; phụ thu phòng đơn; phụ thu chênh lệch giá tour… Nhân viên Du Lịch Việt sẽ gọi điện thoại tư vấn cho quý khách ngay sau khi có phiếu xác nhận booking. (Trong giờ hành chính) </p>
+                <p>Trường hợp quý khách không đồng ý các khoản phát sinh, phiếu xác nhận booking của quý khách sẽ không có hiệu lực.</p>
+            </div>
+            <!--  -->
+            <div class="dat-tour-3">
+                <h1> BẢNG GIÁ TOUR CHI TIẾT</h1>
+                <div class="dat-tour-3-table">
+                    <table>
+                        <tr>
+                            <th>Loại giá\Độ tuổi</th>
+                            <th>Người lớn(Trên 11 tuổi)</th>
+                            <th>Trẻ em(5 - 11 tuổi)</th>
+                            <th>Trẻ nhỏ(2 - 5 tuổi)</th>
+                            <th>Sơ sinh( < 2 tuổi) </th>
+                        </tr>
+                        <tr>				
+                            <th>Giá</th>
+                            <th>7,399,000 đ</th>
+                            <th>6,100,000 đ</th>
+                            <th>4,100,000 đ</th>
+                            <th>300,000 đ</th>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+            <!--  -->
+            <h1>THÔNG TIN LIÊN HỆ</h1>
+            <div class="dat-tour-4">
+                
+                
+                <div class="dat-tour-4-input">
+                    <label for="">Họ tên:</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="dat-tour-4-input1">
+                    <label for="">Email:</label>
+                    <input type="email" name="" id="">
+                </div>
+                <div class="dat-tour-4-input2">
+                    <label for="">Số điện thoại:</label>
+                    <input type="number" name="" id="">
+                </div>
+
+
+                <div class="dat-tour-4-input3">
+                    <label for="">Địa chỉ:</label>
+                    <input type="text" name="" id="">
+                </div>
+
+                <div class="dat-tour-4-input4">
+                    <label for="">Ghi chú:</label>
+                    <input type="text" name="" id="">
+                </div>
+
+                <div class="dat-tour-4-input5">
+                    <label for="">Người lớn:</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="dat-tour-4-input6">
+                    <label for="">Trẻ em(5 - 11 tuổi):</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="dat-tour-4-input7">
+                    <label for="">Trẻ nhỏ(2 - 5 tuổi):</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="dat-tour-4-input8">
+                    <label for="">Sơ sinh(nhỏ hơn 2 tuổi):</label>
+                    <input type="text" name="" id="">
+                </div>
+            
+            </div>
+            <!--  -->
+            <div class="dat-tour-5">
+                <p>Thẻ voucher quà tặng <a href="">Got It</a></p>
+                <div class="dat-tour-5-input">
+                    <input type="number">
+                    <button>Su dung</button>
+                </div>
+                <p class="dat-tour-5-text">(*) Sau khi nhập mã voucher, vui lòng nhấn vào nút sử dụng để mã có hiệu lực.</p>
+            </div>
+            <!--  -->
+            <div class="dat-tour-6">
+                <div class="dat-tour-6-total">
+                    <p>Tổng giá trị :<a href=""> 7,399,000 đ</a></p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="dat-tour-7">
+                <h1>PHƯƠNG THỨC THANH TOÁN</h1>
+                <div class="dat-tour-7-input">
+                    <input type="radio"><label for="">   Thanh toán tại quầy Du Lịch Việt</label>
+                    <input type="radio" name="" id=""> <label for="">  Thanh toán chuyển khoản qua ngân hàng</label>
+                </div>
+                <div class="dat-tour-7-input1">
+                    <input type="radio" name="" id=""><label for="">Thanh toán qua ví MOMO</label>
+                    <input type="radio" name="" id=""><label for="">Thanh toán qua VNPAY</label>
+                </div>
+                <button>Hoan thanh</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-menu">
+                <ul>
+                    <label for="">CÔNG TY CỔ PHẦN TRUYỀN THÔNG DU LỊCH VIỆT</label>
+                    <li><a href=""> Trụ sở chính: 239A Hoàng Văn Thụ, Phường 8, Quận Phú Nhuận, TP. Hồ Chí Minh.</a></li>
+                    <li><a href="">Chi nhánh Hà Nội: 44 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</a></li>
+                    <li><a href="">Điện thoại: 028 73056789 | Hotline: 1900 1177</a></li>
+                    <li><a href="">Website: dulichviet.com.vn</a></li>
+                    <li><a href="">Email: info@dulichviet.com.vn</a></li>
+                </ul>
+                <ul>
+                    <label for="">GÓC KHÁCH HÀNG</label>
+                    <li><a href="">Chính sách đặt tour</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Ý kiến khách hàng</a></li>
+                    <li><a href="">Phiếu góp ý</a></li>
+                </ul>
+                <ul>
+                    <label for="">CHỨNG NHẬN</label>
+                        <li><a href="">+84 353123771</a></li>
+                        <li><a href="">khakha5087@gmail.com</a></li>
+                </ul>
+                <ul>
+                    <div class="footer__newletter">
+                        <h4>ĐĂNG KÝ NHẬN THÔNG TIN KHUYẾN MÃI</h4>
+                        <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
+                        <input type="text" placeholder="địa chỉ email của bạn">
+                        <button>Sign up</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

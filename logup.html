@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+     <!-- font awesome cdn -->
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;    
+    }
+
+    @media screen and (min-width:240px){
+        .boxcenter{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 0 auto;
+    }  
+    }
+
+    @media screen and (min-width:768px){
+        .boxcenter{
+    width: 400px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border: 0.5px solid rgb(117, 117, 117);
+    }
+}
+
+    @media screen and (min-width:1024px) {
+    .boxcenter{
+    width: 400px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border: 0.5px solid rgb(117, 117, 117);
+    
+}
+    }
+h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 a{
+    text-decoration: none;
+    color:#ed0080;
+}
+.form-dn-1{
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-dn-1 i{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 20px;
+}
+.form-dn-1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px 50px;
+   
+}
+.form-dn-2{
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-dn-2 .google{
+    position: absolute;
+    top:10px;
+    left: 70px;
+    font-size: 20px;
+}
+.form-dn-2 .google{
+    width: 5%;
+}
+.form-dn-2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px 60px;
+}
+.form-dn-3{
+    text-align: center;
+    padding: 0px 0px;
+    
+}
+.form-dn-3{
+
+    font-size: 0.7em;
+    padding-top: 5px;
+}
+.form-dn-3 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+/**/
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 70px;
+    row-gap: 15px;
+}
+.form-input input{
+    padding: 15px 15px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Open Sans', sans-serif;
+}
+.form-input .submit{
+    background-color: rgb(255, 51, 102);
+    color: #fff;
+    border-radius: 10px;
+}
+/**/
+.form-bot-1{
+    text-align: center;
+
+}
+.form-bot-1 a{
+    color: rgb(0, 182, 243);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-bot-2{
+    text-align: center;
+    padding: 20px 0px;
+}
+.form-bot-2 a{
+    color: rgb(0, 182, 243);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-bot-2 .chtk{
+    color: black;
+}
+
+</style>
+<body>
+    <div class="boxcenter">
+        <h1><a href="index.html">Đăng Ký</a></h1>
+        <div class="form-dn-1">
+            <i class="fa-brands fa-facebook" style="color: #0561ff;"></i><a href="">Đăng ký bằng facebook</a>
+        </div>
+        <div class="form-dn-2">
+            <img class="google" src="img/google.png" alt=""><a href="">Đăng ký bằng google</a>
+        </div>
+        <div class="form-dn-3">
+            <a href="">Hoặc đăng ký bằng số điện thoại</a>
+        </div>
+        <form action="">
+            <div class="form-input">
+            <input type="number" name="" id="" placeholder="Ví dụ:032569842">
+            <input type="submit" value="Đăng ký" class="submit">
+            </div>
+        </form>
+
+        <div class="form-bot-2">
+            <a href="login.html" class="chtk">Bạn đã có tài khoản?</a><a href="">Đăng kí tại khoản</a>
+        </div>
+    </div>
+</body>
+</html>

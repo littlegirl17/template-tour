@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+     <!-- font awesome cdn -->
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- font roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,400;0,500;1,400&family=Roboto+Slab:wght@100;500;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="header_top1">
+                <div class="header-img">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div> 
+                <div class="header-sign">
+                    <ul>
+                    <li><i class="fa fa-user" aria-hidden="true"></i><a href="login.html">Đăng nhập</a></li>
+                    <li><i class="fa fa-registered" aria-hidden="true"></i><a href="logup.html">Đăng kí</a></li>
+                    </ul>
+                </div>
+                <div class="header-select">
+                    <select onchange="change(this.value)">
+                        <option value="black" selected>Đen</option>
+                        <option value="white">Trắng</option>
+                        <option value="#aeadad">Xám</option>
+                        <option value="rgba(201, 76, 76, 0.3)">Hồng</option>
+                        
+                    </select>
+                </div>
+                
+                <label for="header-mobile-input" class="header-sort">
+                    <i class="fa-sharp fa-solid fa-sort-down"></i>
+                </label>
+              
+                <input type="checkbox" hidden  name="" class="header__input" id="header-mobile-input">
+                <label for="header-mobile-input" class="header-overlay"></label>
+    
+                <div class="header--sign-mobile">
+                    <ul>
+                        <li><i class="fa-solid fa-right-to-bracket"></i><a href="login.html">Đăng nhập</a></li>
+                        <li><i class="fa fa-registered" aria-hidden="true"></i><a href="logup.html">Đăng kí</a></li>
+                    </ul>
+                    <div class="header--select-mobile">
+                        <select onchange="change(this.value)"> 
+                            <option value="black" selected>black</option>
+                            <option value="white">white</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
