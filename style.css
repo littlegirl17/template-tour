@@ -1,15 +1,15 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.header-sign i{
-    color:#ed0080;
+.header-sign i {
+    color: #ed0080;
 }
-.header--sign-mobile i{
-    color:#ed0080;
+
+.header--sign-mobile i {
+    color: #ed0080;
 }
 
 /* font-family: 'Anton', sans-serif;
@@ -20,1319 +20,1508 @@ font-family: 'Roboto Slab', serif; */
 
 
 @media screen and (min-width:240px) {
-.header--sign-mobile{
-    display: block;
-}
-
-.nav-bars {
-    display: block;
-}
-
-.nav_list {
-    display: none;
-}
-
-.nav_list-mobile{
-    display: block;
-}
-
-.container{
-    width: 100%;
-    padding: 10px 20px;
-}
-.container-header{
-    height: 60px;
-    width: 100%;
-   display: flex;
-   justify-content: space-between;
-}
-.container-nav{
-    width: 100%;
-}
-/* ------------------------------------------------Phần header */
-
-header{
-    height: 60px;
-    line-height: 60px;
-    background-color: #ffffff;
-}
-
-.header_top1{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-img{
-    width: 25%;
-    height: 60px;
-}
-
-.header-img img{
-    width: 100%;
-    height: 60px;
-    object-fit: cover;
-}
-.header-sign{
-    display: none;
-}
-
-
-.header-sign ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-sign li{
-    list-style: none;
-}
-
-.header-sign a{
-    padding: 0px 5px;
-    text-decoration: none;
-    color: black;
-    font-size: 1em;
-}
-.header-sort{
-    display: block;
-}
-
-.header-sort{
-    padding: 0px 20px;
-}
-.header-select{
-    display: none;
-}
-.header--select-mobile{
-    display: block;
-}
-/*-----------------------------------------------------------------------*/
-.header-sort i{
-    font-size: 1.5em;
-    color: #ed0080;
-}
-.header--sign-mobile i{
-    padding: 0px 5px;
-    color: #ed0080;
-}
-
-.header-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: none;
-    animation: fadeIn linear 0.2s;
-}
-.header--sign-mobile ul{
-    list-style: none;
-}
-
-.header--sign-mobile ul{height: 50px;}
-
-.header--sign-mobile li{padding-left: 20px;}
-
-.header--sign-mobile a{padding-left:10px;}
-
-.header--sign-mobile{
-   position: fixed;
-   background-color: #ffffff;
-   top: 50px;
-   right: 0px;
-   width: 150px;
-   height: 150px;
-   bottom: 600px;
-   max-width: 100%;
-   transform: translateX(100%);
-   opacity: 0;
-   transition: transform linear 0.2s , opacity linear 0.2s;
-   border-bottom: 1px solid black;
-}
-
-.header--sign-mobile a{
-    color: #010101;
-    text-decoration: none;
-}
-
-.header__input:checked ~ .header-overlay{
-    display: block;
-}
-
-.header__input:checked ~ .header--sign-mobile{
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-@keyframes fadeIn {
-    from{
-        opacity: 0;
+    .header--sign-mobile {
+        display: block;
     }
-    to{
+
+    .nav-bars {
+        display: block;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .nav_list-mobile {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .container-header {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-nav {
+        width: 100%;
+    }
+
+    /* ------------------------------------------------Phần header */
+
+    header {
+        height: 60px;
+        line-height: 60px;
+        background-color: #ffffff;
+    }
+
+    .header_top1 {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-img {
+        width: 25%;
+        height: 60px;
+    }
+
+    .header-img img {
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .header-sign {
+        display: none;
+    }
+
+
+    .header-sign ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-sign li {
+        list-style: none;
+    }
+
+    .header-sign a {
+        padding: 0px 5px;
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+    }
+
+    .header-sort {
+        display: block;
+    }
+
+    .header-sort {
+        padding: 0px 20px;
+    }
+
+    .header-select {
+        display: none;
+    }
+
+    .header--select-mobile {
+        display: block;
+    }
+
+    /*-----------------------------------------------------------------------*/
+    .header-sort i {
+        font-size: 1.5em;
+        color: #ed0080;
+    }
+
+    .header--sign-mobile i {
+        padding: 0px 5px;
+        color: #ed0080;
+    }
+
+    .header-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        animation: fadeIn linear 0.2s;
+    }
+
+    .header--sign-mobile ul {
+        list-style: none;
+    }
+
+    .header--sign-mobile ul {
+        height: 50px;
+    }
+
+    .header--sign-mobile li {
+        padding-left: 20px;
+    }
+
+    .header--sign-mobile a {
+        padding-left: 10px;
+    }
+
+    .header--sign-mobile {
+        position: fixed;
+        background-color: #ffffff;
+        top: 50px;
+        right: 0px;
+        width: 150px;
+        height: 150px;
+        bottom: 600px;
+        max-width: 100%;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform linear 0.2s, opacity linear 0.2s;
+        border-bottom: 1px solid black;
+    }
+
+    .header--sign-mobile a {
+        color: #010101;
+        text-decoration: none;
+    }
+
+    .header__input:checked~.header-overlay {
+        display: block;
+    }
+
+    .header__input:checked~.header--sign-mobile {
+        transform: translateX(0%);
         opacity: 1;
     }
-}
 
-.header--select-mobile{
-    padding-top: 50px;
-    padding-left: 20px;
-}
-/*--------------------------------------------------------------------------------------------------------------------------------*/
-.nav-bars {
-    width: 15px;
-    height: 2px;
-    display: block;
-    color: #f6f0f0;
-    padding-left: 20px;
-    font-size: 1.5em;
-}
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
 
-nav{
-    background-color: #ed0080;
-    height: 60px;
-    line-height: 60px;
-}
-.nav-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: none;
-    animation: fadeIn linear 0.2s;
-    z-index: 1;
-}
+        to {
+            opacity: 1;
+        }
+    }
 
-.nav_list-mobile{
-    position: fixed;
-    top: 110px;
-    left: 0px;
-    bottom: 0;
-    width: 200px;
-    max-width: 100%;
-    background: linear-gradient(90deg,#ed0080 0,#be3b98 100%);
-    padding: 0 10px;
-    transform: translateX(-100%); /*day nos vao*/
-    opacity: 0;
-    transition: transform linear 0.2s , opacity linear 0.2s; /* cái opacity linear 0.2s dùng để trượt ra trượt vô cho nó mờ dần lbaf liên quan tới .nav_input:checked ~ .nav_list-mobile{
+    .header--select-mobile {
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+
+    /*--------------------------------------------------------------------------------------------------------------------------------*/
+    .nav-bars {
+        width: 15px;
+        height: 2px;
+        display: block;
+        color: #f6f0f0;
+        padding-left: 20px;
+        font-size: 1.5em;
+    }
+
+    nav {
+        background-color: #ed0080;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        animation: fadeIn linear 0.2s;
+        z-index: 1;
+    }
+
+    .nav_list-mobile {
+        position: fixed;
+        top: 0;
+        left: 0px;
+        bottom: 0;
+        width: 200px;
+        max-width: 100%;
+        background: linear-gradient(90deg, #ed0080 0, #be3b98 100%);
+        padding: 0 10px;
+        transform: translateX(-100%);
+        /*day nos vao*/
+        opacity: 0;
+        transition: transform linear 0.2s, opacity linear 0.2s;
+        /* cái opacity linear 0.2s dùng để trượt ra trượt vô cho nó mờ dần lbaf liên quan tới .nav_input:checked ~ .nav_list-mobile{
         transform: translateX(0%);
         opacity: 1;
     }*/
-    z-index: 2;
-}
-
-.nav_list-mobile a{
-
-    list-style: none;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.4rem;
-}
-
-.nav-close{
-    font-size: 1.4rem;
-    color: #666;
-    position: absolute;
-    top: 0rem;
-    right: 1rem;
-}
-
-input{
-    margin-left: 15px;
-}
-
-.nav_input:checked ~ .nav-overlay{
-    display: block;
-}
-
-.nav_input:checked ~ .nav_list-mobile{
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-@keyframes fadeIn {
-    from{
-        opacity: 0;
+        z-index: 2;
     }
-    to{
+
+    .nav_list-mobile a {
+
+        list-style: none;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+
+    .nav-close {
+        font-size: 1.4rem;
+        color: #666;
+        position: absolute;
+        top: 0rem;
+        right: 1rem;
+    }
+
+    input {
+        margin-left: 15px;
+    }
+
+    .nav_input:checked~.nav-overlay {
+        display: block;
+    }
+
+    .nav_input:checked~.nav_list-mobile {
+        transform: translateX(0%);
         opacity: 1;
     }
-}
 
-
-/*-------------------------------------------------banner-------------------------------------------*/
-.banner{
-    position: relative;
-    z-index: -1;
-}
-
-.banner_list{
-    width: 100%;
-}
-
-.banner_list img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.banner-text{
-
-    border: 1px solid white;
-    position: absolute;
-    width: 200px;
-    height: 165px;
-    top: 30px;
-    left: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    background: transparent;
-    backdrop-filter: blur(5px); /*làm mờ 20 pixel cho khu vực phía sau phần tử.*/
-}
-.banner-input{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0px 0px;
-    position: relative;
-    padding-bottom: 5px;
-
-}
-.banner-input i{
-    position: absolute;
-    top: 8px;
-    left: 22px;
-}
-.banner-input ::placeholder{
-    color: orangered;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding-left: 15px;
-}
-.banner-input input{
-    padding: 10px 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.banner-input-2 i{
-    position: absolute;
-    top: 8px;
-    left: 22px;
-}
-.banner-input-2  .fa-solid{
-    position: absolute;
-    top: 50px;
-    left: 22px;
-}
-.banner-input-2 ::placeholder{
-    color: orangered;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding-left: 15px;
-}
-.banner-input-2{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 5px;
-    padding: 0px 0px;
-    position: relative;
-
-}
-.banner-input-2 input{
-    padding: 10px 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-
-.text-submit{
-    background-color: orangered;
-    color: white;
-}
-
-
-/*------------------------------------------------------------tieu de------------------------------------------------------------------------------*/
-
-.title {
-    /* padding: 20px 0px; */
-    padding-bottom: 10px;
-}
-
-.title h2{
-    color: #ed0080;
-    font-weight: 600;
-    font-size: 1em;
-    font-family: sans-serif;
-    border-bottom: 1.2px solid #ed0080;
-}
-
-/*---------------------------thẻ menu con one-----------------------*/
-.cattegory-list i{
-    padding-left: 10px;
-    color: #f6f0f0;
-}
-
-.cattegory-list-one-mobile i{
-    padding-left: 10px;
-    color: #f6f0f0;
-}
-
-.cattegory-list-two-mobile i {
-    padding-left: 10px;
-    color: #f6f0f0;
-}
-
-.cattegory-list-three-mobile i{
-    padding-left: 10px;
-    color: #f6f0f0;
-}
-
-.cattegory-list-four-mobile i{
-    padding-left: 10px;
-    color: #f6f0f0;
-}
-
-.nav-close{
-    color: #f6f0f0;
-}
-.cattegory-list-one-mobile ul li {
-    display: none;
-}
-
-.cattegory-list-one-mobile:hover ul li {
-    display: block;
-}
-
-.category-list-one-mobile:hover >.category-list--menu-one-mobile{
-    display: block; /* làm cho phần tử hiển thị. */
-    /*z-index: ; /*4 kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-one-mobile{
-
-    background: #ed0080;
-    width: 200px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ffffff;
-}
-
-.category-list--menu-one-mobile{
-
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    /*z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-one-mobile li{
-    background-color: #fff;
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:150px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-one-mobile li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 13px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-one-mobile li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-}
-
-/*-----------------------------------thẻ menu con two-----------------------*/
-.cattegory-list-two-mobile ul li {
-    display: none;
-}
-
-.cattegory-list-two-mobile:hover ul li {
-    display: block;
-}
-
-.category-list-two-mobile:hover >.category-list--menu-two-mobile{
-    display: block; /* làm cho phần tử hiển thị. */
-    /*z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-two-mobile{
-    background: #ed0080;
-    width: 200px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ffffff;
-}
-
-.category-list--menu-two-mobile{
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    /* z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-two-mobile li{
-    background-color: #fff;
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:150px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-two-mobile li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 13px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-two-mobile li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-}
-
-/*---------------------------thẻ menu con three-----------------------*/
-.cattegory-list-three-mobile ul li {
-    display: none;
-}
-
-.cattegory-list-three-mobile:hover ul li {
-    display: block;
-}
-
-.category-list-three-mobile:hover >.category-list--menu-three-mobile{
-    display: block; /* làm cho phần tử hiển thị. */
-    /*z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-three-mobile{
-    background: #ed0080;
-    width: 200px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ffffff;
-}
-
-.category-list--menu-three-mobile{
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    /*z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-three-mobile li{
-    background-color: #fff;
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:150px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-three-mobile li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 13px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-three-mobile li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-}
-
-/*---------------------------thẻ menu con fourfour-----------------------*/
-.cattegory-list-four-mobile ul li {
-    display: none;
-}
-
-.cattegory-list-four-mobile:hover ul li {
-    display: block;
-}
-
-.category-list-four-mobile:hover >.category-list--menu-four-mobile{
-    display: block; /* làm cho phần tử hiển thị. */
-    /* z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-four-mobile{
-    background: #ed0080;
-    width: 200px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ffffff;
-}
-
-.category-list--menu-four-mobile{
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    /* z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-four-mobile li{
-    background-color: #fff;
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:150px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-four-mobile li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 13px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-four-mobile li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-}
-
-   /*------------------------------------------------------------------------CÁC ĐIỂM DU LỊCH PHỔ BIẾN-------------------------------------------------------------------*/
-
-.item1 {
-    grid-area: header;
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-.item2 {
-    grid-area: menu;
-    width: 100%;
-    height: 205px;
-    position: relative;
-}
-.item3  {
-    grid-area: right;
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-.item4  {
-    grid-area: left;
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-.item5  {
-    grid-area: mint;
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-.item1 img{width: 100%; height: 100px; object-fit: cover;}
-.item2 img{width: 100%; height: 205px; object-fit: cover;}
-.item3 img{width: 100%; height: 100px; object-fit: cover;}
-.item4 img{width: 100%; height: 100px; object-fit: cover;}
-.item5 img{width: 100%; height: 100px; object-fit: cover;}
-
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'menu menu menu menu  header header left left ' /*này là hàng*/
-        'menu menu menu menu  right right mint mint'  /*này là hàng*/
-        ;
-background-color: #f7f7f7;
-    column-gap: 5px;
-    row-gap: 5px;
-}
-
-.boxpronew__content{
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    transition: 0.5s;
-    opacity: 0;
-
-}
-
-.boximgpro__rong {
-    z-index: 2;
-}
-.boximgpro__rong{
-    position: absolute;
-    width: 100%;
-    height:100%;
-
-}
-.boximgpro__rong:hover ~ .boxpronew__content{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: block;
-    opacity: 1;
-    top: 0%;
-    z-index: 1;
-    cursor: pointer;
-}
-.boxpronew__content h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.5em;
-    color: #fff;
-    padding-top: 10px;
-}
-
-.boxpronew__content p{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 0.2em;
-    position: absolute;
-    top: 20px;/**/
-}
-   /*--------------------------------------box sp----------------------------------------------------------------------------------------------------------------   */
-.box{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-
-.boxsp{
-    margin: 10px 0px;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
-    overflow: hidden;
-}
-.boxsp:hover img{
-    scale: 110%;
-}
-.boxsp img{
-    width: 100%;
-    height: 180px;
-    border-radius: 5px;
-    object-fit: cover;
-    transition: scale 500ms;
-}
-
-.boxp-text-1 a{
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.boxsp>div{
-    padding: 3px 0px;
-}
-
-.boxp-text-1 a{
-    padding: 0px 10px;
-}
-
-.boxp-text-2 a{
-    color: #00b6f3;
-}
-
-.boxp-text-2 i {
-    color:#00b6f3;
-    padding: 0px 5px;
-}
-
-.boxsp:hover{
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-
-.boxp-text-3 p{
-    padding: 0px 10px;
-    color: #8d8d8d;
-}
-
-.boxp-text-3 span{
-    font-weight: 700;
-    color: red;
-    padding-left: 95px;
-}
-
-/*-----------------------------------------------------------------------------------gallery---------------------------------------------------------------------*/
-.gallary{height: 250px;}
-
-.boxcenter{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0px 0px;
-}
-
-.column{
-    float: left;
-    width: 33.33%;   /*chieu rong cua moi cot, trừ thg này height: calc(25% - 8px)*/
-    height: 250px;   /*chieu cao tong*/
-
-}
-
-.column img{
-    width: calc(100% - 5px);/*do rong cua tam anh thi hinh no moi cach ra(khoangcach)*/
-    display: block;
-    margin: 4px 2px;
-    height: calc(33.33% - 14px);  /*px cang tang thi img cang thu lai*/
-    object-fit: cover; /*khong sai ti le hinh*/
-    border: 3px solid #00b6f3;
-}
-
-
-
-.lr img{
-    height: calc(33.33% - -22px) !important;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.item{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.item-1{
-
-    margin-bottom: 10px;
-}
-.item-text{
-    display: flex;
-}
-.item-text ul{
-
-    padding: 0px 15px;
-}
-
-.item-text li{
-    list-style: none;
-}
-
-.item-text i{
-    padding: 10px 10px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.item-1{
-    width: 100%;
-    height: auto;
-    background-color: #ea5599;
-    border-radius: 10px;
-    padding: 10px 0px;
-
-}
-
-.item-text a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.8em;
-    font-weight: 500;
-}
-.diadiem-sandon{
-    display: grid;
-    grid-template-columns: 1fr ;
-    column-gap: 10px;
-    row-gap: 10px;
-
-}
-
-
-/*-------------------------------------------------------------------------------*/
-
-.diemden-hangdau{
-    display: grid;
-    grid-template-columns: 1fr    ;
-    justify-items: center;
-    row-gap: 30px;
-
-}
-.diemden{
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin: 20px 0px;
-   overflow: hidden;
-}
-.diemden img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 12px solid #ed0080;
-    transition: scale 400ms;
-    border-right: 5px solid transparent;
-    animation: quayTron 20s infinite linear;
-}
-@keyframes quayTron {
-    to{
-        transform: rotate(360deg);
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
-}
-.diemden img:hover{
-    scale: 110%;
-    border-radius: 50%;
-    border: 10px solid #ffffff;
-    animation: quayTron 0s;
-}
-.diemden a{
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #484747;
-}
-/*-----------------------------------------------------------------------------------*/
-.video{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.video_1 {
-
-    width: 100%;
-    height: 300px;
-}
-
-.video-text h1{
-    text-align: left;
-    padding: 10px 20px;
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-}
-.video-text p{
-    text-align: left;
-    padding: 0px 20px;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
-.video-text img{
-    padding-left: 10px;
-    width: 15%;
-    
-}
-
-/*----------------------------------------------------------footer---------------------------------------------------------------------------------------*/
-footer{
-    clear: both;
-    background-color: #f6fbff;
-    width: 100%;
-    height: auto;
-    border-top: 2px solid #ed0080;
-}
-
-.footer-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px 0px;
-}
-
-.footer-menu label{
-    display: flex;
-    justify-content: space-between;
-    color: #ed0080;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.footer-menu ul{
-    margin-bottom: 10px;
-}
-
-.footer-menu li{
-    list-style: none;/*bo dau cham*/
-}
-
-.footer-menu li a{
-    text-decoration: none; /*bo gach ngang*/
-    color: #000000;
-    font-size: 0.7em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.footer__newletter h4{ /**/
-    color:#ed0080;
-    font-size: 0.9em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.footer__newletter p { /**/
-    font-size: 0.6em;
-    color: rgb(0, 0, 0);
-    padding-top: 5px;
-}
-
-.footer__newletter{
-    margin: 5px 0px;
-
-}
-.footer__newletter input {
-
-    margin-top: 10px ;
-    border: 1px solid none;
-    outline: none; /*bo duong vien khung input*/
-    font-variant: small-caps;
-    padding: 10px 10px;
-}
-
-.footer__newletter input::placeholder {
-    font-variant: small-caps;
-}
-
-.footer__newletter button {
-    color: #ffffff ;
-    background-color: #ed0080;
-    padding: 10px 10px;
-    border: none;
-
-}
-.gmap_iframe{
-    padding: 20px 30px;
-    width: 100% !important;
-    height: 200px !important;
-}
-
-/*--------------------------------------Chi tiet-----------------------------------*/
-/*box tong*/
-.detali-box{
-    display: flex;
-    flex-direction: column;
-}
-/*box-left--tieu de*/
-.box-top{
-
-    background-color: #ffffff;
-}
-.box-top h1{
-    text-align: left;
-    padding: 10px 0px ;
-    font-size: 1.5em;
-}
-/* 2 box left and right big*/
-.box-left{
-
-    background-color: #ffffff;
-}
-.box-right{
-    /* background: #ed0080; */background-color: rgb(255, 255, 255);
-    /* background: linear-gradient(90deg,#ed0080 0,#be3b98 100%); */
-
-}
-/*box left--5 ngoi sao va danh gia*/
-.detali-box-icon{
-    display: flex;
-}
-.detali-box-icon p{
-    padding: 0px 20px;
-}
-.detali-box-icon i{
-    color: rgb(255, 204, 0);
-}
-
-/*box left--img-lon va nho*/
-.detail-img-tall{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px 10px;
-}
-
-.detail-img-tall img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.detail-img-small{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-   padding: 0px 10px;
-   column-gap: 10px;
-}
-
-.detail-img-small img{
-    width: 100%;
-    height: 50px;
-    object-fit: cover;
-}
-/*box left-- chi tiet 1*/
-.detail-left-bottom{
-    padding: 0px 10px;
-}
-.detail-lt{
-    border-bottom:1px solid #ed0080 ;
-    padding-top: 30px;
-
-}
-.detail-lt p{
-    font-size: 1em;
-    font-weight: 500;
-}
-.detail-lt i {
-    color: #ed0080;
-}
-.detail-lt-1, .detail-lt-2, .detail-lt-3, .detail-lt-4{
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  100px 1fr ;
-
-}
-
-/*box left-- chi tiet 2*/
-.detail-left-bottom-2{
-    padding: 10px 10px;
-}
-
-/*box-left--phone-input*/
-.detail-left-bottom-phone{
-    padding: 20px 10px;
-}
-.detail-lt-bot-phone-inp{
-    display: flex;
-    padding-top: 15px;
-}
-
-.detail-lt-bot-phone-inp-1 ::placeholder{
-    padding: 0px 20px;
-}
-.detail-lt-bot-phone-inp-1 input{
-    width: 250px;
-    height: 40px;
-    background-color: #ece7e7;
-    border: none;
-}
-.detail-lt-bot-phone-inp-2 input{
-    width: 50px;
-    height: 40px;
-    background-color: #ed0080;
-    border: none;
-    color: #fff;
-}
-/*b0x-left--chi tiet 3*/
-.detail-left-bottom-3 p{
-    padding: 5px 0px;
-}
-.detail-lt-bot-h1{
-    padding: 10px 10px;
-
-}
-.detail-lt-bot-h1 h2{
-    border-bottom:1px solid #ed0080;
-}
-.detail-lt-bot-P {
-    padding: 0px 30px;
-}
-.detail-lt-bot-p {
-    padding: 10px 60px;
-}
 
 
-/*box-right--cai bang*/
-.detail-right{
+    /*-------------------------------------------------banner-------------------------------------------*/
+    .banner {
+        position: relative;
+        z-index: -1;
+    }
 
-    border: 1px solid black;
-    margin: 20px 10px;
-    padding: 0px 10px; /*ben trong*/
-}
-.detail-right .b-strong{
-    font-weight: 600;
-}
-.detail-rg{
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  1fr ;
-    border-bottom: 1px solid black;
-    color: #ed0080;
-}
-.detail-rg-1, .detail-rg-2, .detail-rg-3, .detail-rg-4, .detail-rg-5 {
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  1fr 1fr ;
-    border-bottom: 1px solid black;
-}
+    .banner_list {
+        width: 100%;
+    }
 
-/*box-right--bang gia*/
-.detail-right-bottom{
-    background: linear-gradient(90deg,#ed0080 0,#be3b98 100%);
-    margin: 20px 10px;
-    padding: 0px 10px; /*ben trong*/
-}
-.detail-rg-bt-text{
-    display: flex;
-}
-.detail-rg-bt-text p{
-    padding: 10px;
-    padding-left: 10px;
-    color: #fff;
-}
-.etail-rg-bt-text-B{
-    font-size: 1.5em;
-    font-weight: 600;
-}
-.etail-rg-bt-text-N{
-    text-decoration: line-through;
-}
-/*box-right--bang gia--input*/
-.detail-rg-bt-input{
-    display: grid;
-    row-gap: 10px;
-    padding-bottom: 20px;
-}
-.detail-rg-bt-input input{
-   border-radius: 5px;
-   border: none;
-   height: 35px;
-}
-/*box-right--cac danh muc*/
-.detail-right-bottom-2{
-    margin: 20px 10px;
-    padding: 0px 10px; /*ben trong*/
-}
-.detail-rg-bt-input a input{
-    width: 300px;
- }
-.detail-rg-bt-text-2 p{
-    padding: 10px 0px;
-}
-.detail-rg-bt-text-2 p i{
-    padding: 0px 10px;
-}
+    .banner_list img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
 
-/*------------------------------------------------------------------------------------------------------*/
+    .banner-text {
 
-.dat-tour-1{
-    margin-top: 30px;
-    background-color: #8d8d8d;
-    display: grid;
-    grid-template-columns: 1fr;
+        border: 1px solid white;
+        position: absolute;
+        width: 200px;
+        height: 165px;
+        top: 30px;
+        left: 20px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        background: transparent;
+        backdrop-filter: blur(5px);
+        /*làm mờ 20 pixel cho khu vực phía sau phần tử.*/
+    }
 
-}
-.dat-tour-1-img{
-    background-color: #e7a3c1;
-    width: 100%;
-    height: 200px;
-}
-.dat-tour-1-img img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.dat-tour-1-right{
-    background-color: rgb(255, 255, 255);
-}
-/**/
-.dat-tour-1-right{
-   width: 100%;
-   height: auto;
+    .banner-input {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px 0px;
+        position: relative;
+        padding-bottom: 5px;
 
-}
-.right-table{
-    border: 1px solid black;
-    margin: 30px 0px;
+    }
 
-}
-.right-table-top1{
-    border-bottom: 1px solid black;
-    padding: 10px 10px;
-}
-.right-table-top2{
-   padding: 20px 10px;
-}
-.right-table-top2 ul{
-    display: flex;
-    justify-content: space-between;
-}
-.right-table-top2 li{
-    list-style: none;
-}
-.right-table-top2 a{
-    text-decoration: none;
-    color: #484747;
-}
-/**/
-.dat-tour-2{
-    margin-top: 0px;
-    padding: 20px 0px;
-    color: rgb(234, 28, 28);
-}
+    .banner-input i {
+        position: absolute;
+        top: 8px;
+        left: 22px;
+    }
 
-.dat-tour-3{
-    margin-top: 0px;
-}
-.dat-tour-3 h1{
-    text-align: center;
-    padding: 10px 0px;
-    font-size: 1em;
-}
+    .banner-input ::placeholder {
+        color: orangered;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding-left: 15px;
+    }
 
-table {
+    .banner-input input {
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+    }
 
-    border-collapse: collapse;
-}
+    .banner-input-2 i {
+        position: absolute;
+        top: 8px;
+        left: 22px;
+    }
 
-table, th, td {
-    border: 1px solid rgb(97, 97, 97);
-    padding: 10px 10px;
-    color: #858383;
-    font-size: 0.9em;
-}
-/**/
-h1{
-    font-size: 1em;
-    padding: 30px 0px;
-   text-align: center;
-}
-.dat-tour-4{
-    display: grid;
-    grid-template-columns: 1fr ;
-    padding: 0px 10px;
-}
-.dat-tour-4 label{
-    display: grid;
-    grid-template-columns: 1fr ;
-    padding: 10px 20px;
-}
-.dat-tour-4 input{
-    margin-left: 0px;
-    padding: 10px 80px;
-}
+    .banner-input-2 .fa-solid {
+        position: absolute;
+        top: 50px;
+        left: 22px;
+    }
 
-/**/
-.dat-tour-7-input{
-  padding: 10px 0px;
-}
-.dat-tour-7-input input{
-    margin: 0px 30px;
+    .banner-input-2 ::placeholder {
+        color: orangered;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding-left: 15px;
+    }
 
-  }
-.dat-tour-7-input1{
-    padding: 0px 0px;
-}
-.dat-tour-7-input1 input{
-    margin: 0px 38px;
+    .banner-input-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+        padding: 0px 0px;
+        position: relative;
 
-  }
-.dat-tour-7 button{
-   margin: 0px 120px;
-   margin-top: 30px;
-   padding: 10px 15px;
-   background-color: #ed0080;
-   color: #fff;
-   border: none;
-}
+    }
+
+    .banner-input-2 input {
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+    .text-submit {
+        background-color: orangered;
+        color: white;
+    }
+
+
+    /*------------------------------------------------------------tieu de------------------------------------------------------------------------------*/
+
+    .title {
+        /* padding: 20px 0px; */
+        padding-bottom: 10px;
+    }
+
+    .title h2 {
+        color: #ed0080;
+        font-weight: 600;
+        font-size: 1em;
+        font-family: sans-serif;
+        border-bottom: 1.2px solid #ed0080;
+    }
+
+    /*---------------------------thẻ menu con one-----------------------*/
+    .cattegory-list i {
+        padding-left: 10px;
+        color: #f6f0f0;
+    }
+
+    .cattegory-list-one-mobile i {
+        padding-left: 10px;
+        color: #f6f0f0;
+    }
+
+    .cattegory-list-two-mobile i {
+        padding-left: 10px;
+        color: #f6f0f0;
+    }
+
+    .cattegory-list-three-mobile i {
+        padding-left: 10px;
+        color: #f6f0f0;
+    }
+
+    .cattegory-list-four-mobile i {
+        padding-left: 10px;
+        color: #f6f0f0;
+    }
+
+    .nav-close {
+        color: #f6f0f0;
+    }
+
+    .cattegory-list-one-mobile ul li {
+        display: none;
+    }
+
+    .cattegory-list-one-mobile:hover ul li {
+        display: block;
+    }
+
+    .category-list-one-mobile:hover>.category-list--menu-one-mobile {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        /*z-index: ; /*4 kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-one-mobile {
+
+        background: #ed0080;
+        width: 200px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ffffff;
+    }
+
+    .category-list--menu-one-mobile {
+
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        /*z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-one-mobile li {
+        background-color: #fff;
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 150px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-one-mobile li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 13px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-one-mobile li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+    }
+
+    /*-----------------------------------thẻ menu con two-----------------------*/
+    .cattegory-list-two-mobile ul li {
+        display: none;
+    }
+
+    .cattegory-list-two-mobile:hover ul li {
+        display: block;
+    }
+
+    .category-list-two-mobile:hover>.category-list--menu-two-mobile {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        /*z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-two-mobile {
+        background: #ed0080;
+        width: 200px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ffffff;
+    }
+
+    .category-list--menu-two-mobile {
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        /* z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-two-mobile li {
+        background-color: #fff;
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 150px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-two-mobile li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 13px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-two-mobile li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+    }
+
+    /*---------------------------thẻ menu con three-----------------------*/
+    .cattegory-list-three-mobile ul li {
+        display: none;
+    }
+
+    .cattegory-list-three-mobile:hover ul li {
+        display: block;
+    }
+
+    .category-list-three-mobile:hover>.category-list--menu-three-mobile {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        /*z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-three-mobile {
+        background: #ed0080;
+        width: 200px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ffffff;
+    }
+
+    .category-list--menu-three-mobile {
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        /*z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-three-mobile li {
+        background-color: #fff;
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 150px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-three-mobile li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 13px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-three-mobile li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+    }
+
+    /*---------------------------thẻ menu con fourfour-----------------------*/
+    .cattegory-list-four-mobile ul li {
+        display: none;
+    }
+
+    .cattegory-list-four-mobile:hover ul li {
+        display: block;
+    }
+
+    .category-list-four-mobile:hover>.category-list--menu-four-mobile {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        /* z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-four-mobile {
+        background: #ed0080;
+        width: 200px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ffffff;
+    }
+
+    .category-list--menu-four-mobile {
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        /* z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-four-mobile li {
+        background-color: #fff;
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 150px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-four-mobile li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 13px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-four-mobile li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+    }
+
+    /*------------------------------------------------------------------------CÁC ĐIỂM DU LỊCH PHỔ BIẾN-------------------------------------------------------------------*/
+
+    .item1 {
+        grid-area: header;
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+    .item2 {
+        grid-area: menu;
+        width: 100%;
+        height: 205px;
+        position: relative;
+    }
+
+    .item3 {
+        grid-area: right;
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+    .item4 {
+        grid-area: left;
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+    .item5 {
+        grid-area: mint;
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+    .item1 img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .item2 img {
+        width: 100%;
+        height: 205px;
+        object-fit: cover;
+    }
+
+    .item3 img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .item4 img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .item5 img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'menu menu menu menu  header header left left '
+            /*này là hàng*/
+            'menu menu menu menu  right right mint mint'
+            /*này là hàng*/
+        ;
+        background-color: #f7f7f7;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+
+    .boxpronew__content {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transition: 0.5s;
+        opacity: 0;
+
+    }
+
+    .boximgpro__rong {
+        z-index: 2;
+    }
+
+    .boximgpro__rong {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .boximgpro__rong:hover~.boxpronew__content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+        opacity: 1;
+        top: 0%;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .boxpronew__content h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.5em;
+        color: #fff;
+        padding-top: 10px;
+    }
+
+    .boxpronew__content p {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        font-size: 0.2em;
+        position: absolute;
+        top: 20px;
+        /**/
+    }
+
+    /*--------------------------------------box sp----------------------------------------------------------------------------------------------------------------   */
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .boxsp {
+        margin: 10px 0px;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+        overflow: hidden;
+    }
+
+    .boxsp:hover img {
+        scale: 110%;
+    }
+
+    .boxsp img {
+        width: 100%;
+        height: 180px;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: scale 500ms;
+    }
+
+    .boxp-text-1 a {
+        color: black;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .boxsp>div {
+        padding: 3px 0px;
+    }
+
+    .boxp-text-1 a {
+        padding: 0px 10px;
+    }
+
+    .boxp-text-2 a {
+        color: #00b6f3;
+    }
+
+    .boxp-text-2 i {
+        color: #00b6f3;
+        padding: 0px 5px;
+    }
+
+    .boxsp:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    }
+
+    .boxp-text-3 p {
+        padding: 0px 10px;
+        color: #8d8d8d;
+    }
+
+    .boxp-text-3 span {
+        font-weight: 700;
+        color: red;
+        padding-left: 95px;
+    }
+
+    /*-----------------------------------------------------------------------------------gallery---------------------------------------------------------------------*/
+    .gallary {
+        height: 250px;
+    }
+
+    .boxcenter {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 0px;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        /*chieu rong cua moi cot, trừ thg này height: calc(25% - 8px)*/
+        height: 250px;
+        /*chieu cao tong*/
+
+    }
+
+    .column img {
+        width: calc(100% - 5px);
+        /*do rong cua tam anh thi hinh no moi cach ra(khoangcach)*/
+        display: block;
+        margin: 4px 2px;
+        height: calc(33.33% - 14px);
+        /*px cang tang thi img cang thu lai*/
+        object-fit: cover;
+        /*khong sai ti le hinh*/
+        border: 3px solid #00b6f3;
+    }
+
+
+
+    .lr img {
+        height: calc(33.33% - -22px) !important;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .item {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .item-1 {
+
+        margin-bottom: 10px;
+    }
+
+    .item-text {
+        display: flex;
+    }
+
+    .item-text ul {
+
+        padding: 0px 15px;
+    }
+
+    .item-text li {
+        list-style: none;
+    }
+
+    .item-text i {
+        padding: 10px 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .item-1 {
+        width: 100%;
+        height: auto;
+        background-color: #ea5599;
+        border-radius: 10px;
+        padding: 10px 0px;
+
+    }
+
+    .item-text a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+
+    .diadiem-sandon {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+
+    }
+
+
+    /*-------------------------------------------------------------------------------*/
+
+    .diemden-hangdau {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 30px;
+
+    }
+
+    .diemden {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin: 20px 0px;
+        overflow: hidden;
+    }
+
+    .diemden img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 12px solid #ed0080;
+        transition: scale 400ms;
+        border-right: 5px solid transparent;
+        animation: quayTron 20s infinite linear;
+    }
+
+    @keyframes quayTron {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .diemden img:hover {
+        scale: 110%;
+        border-radius: 50%;
+        border: 10px solid #ffffff;
+        animation: quayTron 0s;
+    }
+
+    .diemden a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #484747;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    .video {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .video_1 {
+
+        width: 100%;
+        height: 300px;
+    }
+
+    .video-text h1 {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 2em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .video-text p {
+        text-align: left;
+        padding: 0px 20px;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .video-text img {
+        padding-left: 10px;
+        width: 15%;
+
+    }
+
+    /*----------------------------------------------------------footer---------------------------------------------------------------------------------------*/
+    footer {
+        clear: both;
+        background-color: #f6fbff;
+        width: 100%;
+        height: auto;
+        border-top: 2px solid #ed0080;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 0px;
+    }
+
+    .footer-menu label {
+        display: flex;
+        justify-content: space-between;
+        color: #ed0080;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer-menu ul {
+        margin-bottom: 10px;
+    }
+
+    .footer-menu li {
+        list-style: none;
+        /*bo dau cham*/
+    }
+
+    .footer-menu li a {
+        text-decoration: none;
+        /*bo gach ngang*/
+        color: #000000;
+        font-size: 0.7em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer__newletter h4 {
+        /**/
+        color: #ed0080;
+        font-size: 0.9em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer__newletter p {
+        /**/
+        font-size: 0.6em;
+        color: rgb(0, 0, 0);
+        padding-top: 5px;
+    }
+
+    .footer__newletter {
+        margin: 5px 0px;
+
+    }
+
+    .footer__newletter input {
+
+        margin-top: 10px;
+        border: 1px solid none;
+        outline: none;
+        /*bo duong vien khung input*/
+        font-variant: small-caps;
+        padding: 10px 10px;
+    }
+
+    .footer__newletter input::placeholder {
+        font-variant: small-caps;
+    }
+
+    .footer__newletter button {
+        color: #ffffff;
+        background-color: #ed0080;
+        padding: 10px 10px;
+        border: none;
+
+    }
+
+    .gmap_iframe {
+        padding: 20px 30px;
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    /*--------------------------------------Chi tiet-----------------------------------*/
+    /*box tong*/
+    .detali-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*box-left--tieu de*/
+    .box-top {
+
+        background-color: #ffffff;
+    }
+
+    .box-top h1 {
+        text-align: left;
+        padding: 10px 0px;
+        font-size: 1.5em;
+    }
+
+    /* 2 box left and right big*/
+    .box-left {
+
+        background-color: #ffffff;
+    }
+
+    .box-right {
+        /* background: #ed0080; */
+        background-color: rgb(255, 255, 255);
+        /* background: linear-gradient(90deg,#ed0080 0,#be3b98 100%); */
+
+    }
+
+    /*box left--5 ngoi sao va danh gia*/
+    .detali-box-icon {
+        display: flex;
+    }
+
+    .detali-box-icon p {
+        padding: 0px 20px;
+    }
+
+    .detali-box-icon i {
+        color: rgb(255, 204, 0);
+    }
+
+    /*box left--img-lon va nho*/
+    .detail-img-tall {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 10px;
+    }
+
+    .detail-img-tall img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .detail-img-small {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0px 10px;
+        column-gap: 10px;
+    }
+
+    .detail-img-small img {
+        width: 100%;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    /*box left-- chi tiet 1*/
+    .detail-left-bottom {
+        padding: 0px 10px;
+    }
+
+    .detail-lt {
+        border-bottom: 1px solid #ed0080;
+        padding-top: 30px;
+
+    }
+
+    .detail-lt p {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .detail-lt i {
+        color: #ed0080;
+    }
+
+    .detail-lt-1, .detail-lt-2, .detail-lt-3, .detail-lt-4 {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 100px 1fr;
+
+    }
+
+    /*box left-- chi tiet 2*/
+    .detail-left-bottom-2 {
+        padding: 10px 10px;
+    }
+
+    /*box-left--phone-input*/
+    .detail-left-bottom-phone {
+        padding: 20px 10px;
+    }
+
+    .detail-lt-bot-phone-inp {
+        display: flex;
+        padding-top: 15px;
+    }
+
+    .detail-lt-bot-phone-inp-1 ::placeholder {
+        padding: 0px 20px;
+    }
+
+    .detail-lt-bot-phone-inp-1 input {
+        width: 250px;
+        height: 40px;
+        background-color: #ece7e7;
+        border: none;
+    }
+
+    .detail-lt-bot-phone-inp-2 input {
+        width: 50px;
+        height: 40px;
+        background-color: #ed0080;
+        border: none;
+        color: #fff;
+    }
+
+    /*b0x-left--chi tiet 3*/
+    .detail-left-bottom-3 p {
+        padding: 5px 0px;
+    }
+
+    .detail-lt-bot-h1 {
+        padding: 10px 10px;
+
+    }
+
+    .detail-lt-bot-h1 h2 {
+        border-bottom: 1px solid #ed0080;
+    }
+
+    .detail-lt-bot-P {
+        padding: 0px 30px;
+    }
+
+    .detail-lt-bot-p {
+        padding: 10px 60px;
+    }
+
+
+    /*box-right--cai bang*/
+    .detail-right {
+
+        border: 1px solid black;
+        margin: 20px 10px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
+
+    .detail-right .b-strong {
+        font-weight: 600;
+    }
+
+    .detail-rg {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 1fr;
+        border-bottom: 1px solid black;
+        color: #ed0080;
+    }
+
+    .detail-rg-1, .detail-rg-2, .detail-rg-3, .detail-rg-4, .detail-rg-5 {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid black;
+    }
+
+    /*box-right--bang gia*/
+    .detail-right-bottom {
+        background: linear-gradient(90deg, #ed0080 0, #be3b98 100%);
+        margin: 20px 10px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
+
+    .detail-rg-bt-text {
+        display: flex;
+    }
+
+    .detail-rg-bt-text p {
+        padding: 10px;
+        padding-left: 10px;
+        color: #fff;
+    }
+
+    .etail-rg-bt-text-B {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .etail-rg-bt-text-N {
+        text-decoration: line-through;
+    }
+
+    /*box-right--bang gia--input*/
+    .detail-rg-bt-input {
+        display: grid;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .detail-rg-bt-input input {
+        border-radius: 5px;
+        border: none;
+        height: 35px;
+    }
+
+    /*box-right--cac danh muc*/
+    .detail-right-bottom-2 {
+        margin: 20px 10px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
+
+    .detail-rg-bt-input a input {
+        width: 300px;
+    }
+
+    .detail-rg-bt-text-2 p {
+        padding: 10px 0px;
+    }
+
+    .detail-rg-bt-text-2 p i {
+        padding: 0px 10px;
+    }
+
+    /*------------------------------------------------------------------------------------------------------*/
+
+    .dat-tour-1 {
+        margin-top: 30px;
+        background-color: #8d8d8d;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .dat-tour-1-img {
+        background-color: #e7a3c1;
+        width: 100%;
+        height: 200px;
+    }
+
+    .dat-tour-1-img img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .dat-tour-1-right {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /**/
+    .dat-tour-1-right {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .right-table {
+        border: 1px solid black;
+        margin: 30px 0px;
+
+    }
+
+    .right-table-top1 {
+        border-bottom: 1px solid black;
+        padding: 10px 10px;
+    }
+
+    .right-table-top2 {
+        padding: 20px 10px;
+    }
+
+    .right-table-top2 ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right-table-top2 li {
+        list-style: none;
+    }
+
+    .right-table-top2 a {
+        text-decoration: none;
+        color: #484747;
+    }
+
+    /**/
+    .dat-tour-2 {
+        margin-top: 0px;
+        padding: 20px 0px;
+        color: rgb(234, 28, 28);
+    }
+
+    .dat-tour-3 {
+        margin-top: 0px;
+    }
+
+    .dat-tour-3 h1 {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 1em;
+    }
+
+    table {
+
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid rgb(97, 97, 97);
+        padding: 10px 10px;
+        color: #858383;
+        font-size: 0.9em;
+    }
+
+    /**/
+    h1 {
+        font-size: 1em;
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .dat-tour-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px 10px;
+    }
+
+    .dat-tour-4 label {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+    }
+
+    .dat-tour-4 input {
+        margin-left: 0px;
+        padding: 10px 80px;
+    }
+
+    /**/
+    .dat-tour-7-input {
+        padding: 10px 0px;
+    }
+
+    .dat-tour-7-input input {
+        margin: 0px 30px;
+
+    }
+
+    .dat-tour-7-input1 {
+        padding: 0px 0px;
+    }
+
+    .dat-tour-7-input1 input {
+        margin: 0px 38px;
+
+    }
+
+    .dat-tour-7 button {
+        margin: 0px 120px;
+        margin-top: 30px;
+        padding: 10px 15px;
+        background-color: #ed0080;
+        color: #fff;
+        border: none;
+    }
 }
 
 
@@ -1374,1019 +1563,1209 @@ h1{
 
 /* Máy tính bảng dọc*/
 @media screen and (min-width:768px) {
-.header--sign-mobile{
-    display: none;
-}
-.header-sort{
-    display: none;
-}
-.header-sign{
-    display: block;
-}
-.nav-bars {
-    display: none;
-}
-.nav_list {
-    display: block;
-}
-
-.container-header{
-    width: 100%;
-   display: flex;
-   justify-content: space-between;
-}
-.container-nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.container{
-    width: 100%;
-    padding: 20px 20px;
-}
-
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-header{
-    height: 150px;
-    line-height: 150px;
-}
-.header_top1{
-    width: 100%;
-    height: 150px;
-    display: flex;
-}
-.nav_list-mobile{
-    display: none;
-}
-.header-img{
-    width: 25%;
-}
-
-.header-img img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.header-sign ul{
-    padding-left: 250px;
-    display: flex;
-}
-
-.header-sign li{
-    list-style: none;
-}
-
-.header-sign a{
-    padding: 0px 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.header-select{
-    display: block;
-    padding-right: 70px;
-}
-/*------------------------------------------------------------------------------font awesome NAV------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------------------------nav----------------------------------------------------------------*/
-
-nav{
-    background-color: #ed0080;
-    height: 50px;
-    line-height: 50px;
-}
-.nav_list{
-    width: 800px;
-}
-.nav_list ul{
-    display: flex;
-    justify-content: center;
-}
-
-.nav_list li{
-    list-style: none;
-}
-
-.nav_list a{
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    font-weight: 400;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-}
-
-.nav_list a:hover{
-    background: #ed0080;/*#3B94B8*/
-    color: #f6f0f0;
-}
-
-/*--------------------------------------------nav_list-----------------------------------------------------------------------------------------------------------------*/
-.nav_list ul li ul{
-    position: absolute; /* Đặt position thuộc tính của phần tử được nhắm mục tiêu thành absolute*/
-    display: flex;
-    flex-direction: column; /* các mục được xếp chồng lên nhau theo chiều dọc từ trên xuống dưới. */
-    background-color:#ed0080;
-    border: 1px solid #ffffff;
-    display: none; /*phần tử sẽ không được hiển thị trên trang và nó sẽ không chiếm bất kỳ dung lượng nào. */
-    padding: 0px 0px;
-}
-
-.nav_list ul li ul li{
-    height: 40px;
-    line-height: 40px;
-}
-
-/*---------------------------------------------------Tìm kiếm-----------------------------------------------------------------------------------------------------------------*/
-.category-list{
-    background-color: #ed0080;
-    width: 140px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0px 10px;
-    border-right:1px solid #ed0080;
-    border-left:1px solid #ed0080;
-}
-
-/*-----------------------------------------------------Địa điểm ----------------------------------------------------------------------------------------------------------*/
-.category-list-one:hover>.category-list--menu-one{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-one{
-    background: #ed0080;
-    width: 140px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ed0080;
-}
-
-.category-list--menu-one{
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-one li{
-    background-color: #ffffff;
-    border-bottom: 2px solid #ffffff;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:138px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-one li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 10px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-one li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-    display: block;
-}
-
-/*----------------------------------------------------Ngày khởi hành----------------------------------------------------------------------------------------------------- */
-.category-list-two:hover>.category-list--menu-two{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-two{
-    background: #ed0080;
-    width: 140px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ed0080;
-}
-
-.category-list--menu-two{
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-two li{
-    background-color: #fff;
-    border-bottom: 2px solid #ffffff;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:138px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-two li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 10px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-two li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-}
-
-/*------------------------------------------------------------Thời gian --------------------------------------------------------------------------------------------------*/
-.category-list-three:hover>.category-list--menu-three{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-three{
-    background: #ed0080;
-    width: 140px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ed0080;
-}
-
-.category-list--menu-three{
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-three li{
-    background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid #ffffff;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:138px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-three li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 10px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-three li:hover {
-    color: #ffffff;
-    background-color: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-}
-
-/*------------------------------------------------------Giá tiền -----------------------------------------------------------------------------------------------------------*/
-.category-list-four:hover>.category-list--menu-four{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-.category-list-four{
-    background: #ed0080;
-    width: 140px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ed0080;
-}
-
-.category-list--menu-four{
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-four li{
-    background-color: rgb(255, 254, 254);
-    border-bottom: 2px solid #ffffff;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:138px;/* độ rộng của thẻ menu con  */
-}
-
-.category-list--menu-four li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 10px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-four li:hover {
-    color: #fff;
-    background-color: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-}
-
-@keyframes hiendandan { /* @keyframeslà một quy tắc CSS xác định hành vi của hoạt ảnh trong một khoảng thời gian.*/
-    from {
-    opacity: 0; /* Khi bắt đầu hoạt ảnh (0%), phần tử sẽ có độ mờ bằng 0, nghĩa là nó sẽ hoàn toàn trong suốt.*/
+    .header--sign-mobile {
+        display: none;
     }
-    to {
-    opacity: 1; /* Khi hoạt ảnh diễn ra, độ mờ đục sẽ tăng dần từ 0 lên 1. */
+
+    .header-sort {
+        display: none;
     }
-}
 
-/*-------------------------------------------------banner-------------------------------------------------------------------------------------------------------------*/
-.banner{
-    position: relative;
-}
+    .header-sign {
+        display: block;
+    }
 
-.banner_list img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
+    .nav-bars {
+        display: none;
+    }
 
-.banner-text{
-    border: 1px solid white;
-    position: absolute;
-    width: 500px;
-    height: 150px;
-    top: 150px;
-    left: 50px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    background: transparent;
-    backdrop-filter: blur(5px); /*làm mờ 20 pixel cho khu vực phía sau phần tử.*/
-}
-.banner-input{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px 10px;
-    position: relative;
-}
-.banner-input i{
-    position: absolute;
-    top: 23px;
-    left: 35px;
-}
-.banner-input ::placeholder{
-    color: orangered;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding-left: 15px;
-}
-.banner-input input{
-    padding: 15px 15px;
-    border: none;
-    border-radius: 5px;
-}
+    .nav_list {
+        display: block;
+    }
 
-.banner-input-2 i{
-    position: absolute;
-    top: 23px;
-    left: 35px;
-}
-.banner-input-2  .fa-solid{
-    position: absolute;
-    top: 23px;
-    left: 242px;
-}
-.banner-input-2 ::placeholder{
-    color: orangered;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding-left: 15px;
-}
-.banner-input-2{
-    padding: 10px 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: relative;
-}
-.banner-input-2 input{
-    padding: 15px 15px;
-    border: none;
-    border-radius: 5px;
-}
+    .container-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    header {
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .header_top1 {
+        width: 100%;
+        height: 150px;
+        display: flex;
+    }
+
+    .nav_list-mobile {
+        display: none;
+    }
+
+    .header-img {
+        width: 25%;
+    }
+
+    .header-img img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .header-sign ul {
+        padding-left: 250px;
+        display: flex;
+    }
+
+    .header-sign li {
+        list-style: none;
+    }
+
+    .header-sign a {
+        padding: 0px 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header-select {
+        display: block;
+        padding-right: 70px;
+    }
+
+    /*------------------------------------------------------------------------------font awesome NAV------------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------------------------------------------nav----------------------------------------------------------------*/
+
+    nav {
+        background-color: #ed0080;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .nav_list {
+        width: 800px;
+    }
+
+    .nav_list ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_list li {
+        list-style: none;
+    }
+
+    .nav_list a {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        font-weight: 400;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+    }
+
+    .nav_list a:hover {
+        background: #ed0080;
+        /*#3B94B8*/
+        color: #f6f0f0;
+    }
+
+    /*--------------------------------------------nav_list-----------------------------------------------------------------------------------------------------------------*/
+    .nav_list ul li ul {
+        position: absolute;
+        /* Đặt position thuộc tính của phần tử được nhắm mục tiêu thành absolute*/
+        display: flex;
+        flex-direction: column;
+        /* các mục được xếp chồng lên nhau theo chiều dọc từ trên xuống dưới. */
+        background-color: #ed0080;
+        border: 1px solid #ffffff;
+        display: none;
+        /*phần tử sẽ không được hiển thị trên trang và nó sẽ không chiếm bất kỳ dung lượng nào. */
+        padding: 0px 0px;
+    }
+
+    .nav_list ul li ul li {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /*---------------------------------------------------Tìm kiếm-----------------------------------------------------------------------------------------------------------------*/
+    .category-list {
+        background-color: #ed0080;
+        width: 140px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0px 10px;
+        border-right: 1px solid #ed0080;
+        border-left: 1px solid #ed0080;
+    }
+
+    /*-----------------------------------------------------Địa điểm ----------------------------------------------------------------------------------------------------------*/
+    .category-list-one:hover>.category-list--menu-one {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-one {
+        background: #ed0080;
+        width: 140px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-one {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-one li {
+        background-color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 138px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-one li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 10px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-one li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+        display: block;
+    }
+
+    /*----------------------------------------------------Ngày khởi hành----------------------------------------------------------------------------------------------------- */
+    .category-list-two:hover>.category-list--menu-two {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-two {
+        background: #ed0080;
+        width: 140px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-two {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-two li {
+        background-color: #fff;
+        border-bottom: 2px solid #ffffff;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 138px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-two li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 10px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-two li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+    }
+
+    /*------------------------------------------------------------Thời gian --------------------------------------------------------------------------------------------------*/
+    .category-list-three:hover>.category-list--menu-three {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-three {
+        background: #ed0080;
+        width: 140px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-three {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-three li {
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px solid #ffffff;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 138px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-three li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 10px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-three li:hover {
+        color: #ffffff;
+        background-color: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+    }
+
+    /*------------------------------------------------------Giá tiền -----------------------------------------------------------------------------------------------------------*/
+    .category-list-four:hover>.category-list--menu-four {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-four {
+        background: #ed0080;
+        width: 140px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-four {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-four li {
+        background-color: rgb(255, 254, 254);
+        border-bottom: 2px solid #ffffff;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 138px;
+        /* độ rộng của thẻ menu con  */
+    }
+
+    .category-list--menu-four li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 10px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-four li:hover {
+        color: #fff;
+        background-color: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+    }
+
+    @keyframes hiendandan {
+
+        /* @keyframeslà một quy tắc CSS xác định hành vi của hoạt ảnh trong một khoảng thời gian.*/
+        from {
+            opacity: 0;
+            /* Khi bắt đầu hoạt ảnh (0%), phần tử sẽ có độ mờ bằng 0, nghĩa là nó sẽ hoàn toàn trong suốt.*/
+        }
+
+        to {
+            opacity: 1;
+            /* Khi hoạt ảnh diễn ra, độ mờ đục sẽ tăng dần từ 0 lên 1. */
+        }
+    }
+
+    /*-------------------------------------------------banner-------------------------------------------------------------------------------------------------------------*/
+    .banner {
+        position: relative;
+    }
+
+    .banner_list img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .banner-text {
+        border: 1px solid white;
+        position: absolute;
+        width: 500px;
+        height: 150px;
+        top: 150px;
+        left: 50px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        background: transparent;
+        backdrop-filter: blur(5px);
+        /*làm mờ 20 pixel cho khu vực phía sau phần tử.*/
+    }
+
+    .banner-input {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 10px;
+        position: relative;
+    }
+
+    .banner-input i {
+        position: absolute;
+        top: 23px;
+        left: 35px;
+    }
+
+    .banner-input ::placeholder {
+        color: orangered;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding-left: 15px;
+    }
+
+    .banner-input input {
+        padding: 15px 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .banner-input-2 i {
+        position: absolute;
+        top: 23px;
+        left: 35px;
+
+    }
+
+    .banner-input-2 .fa-solid {
+        position: absolute;
+        top: 23px;
+        left: 230px;
+    }
+
+    .banner-input-2 ::placeholder {
+        color: orangered;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding-left: 15px;
+    }
+
+    .banner-input-2 {
+        padding: 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    .banner-input-2 input {
+        padding: 15px 15px;
+        border: none;
+        border-radius: 5px;
+    }
 
 
-.text-submit{
-    background-color: orangered;
-    color: white;
-}
+    .text-submit {
+        background-color: orangered;
+        color: white;
+    }
 
 
 
-/*------------------------------------------------tieu de H2---------------------------------------------------------------------------------------------------------*/
-.title {
-    padding-bottom: 20px;
-}
+    /*------------------------------------------------tieu de H2---------------------------------------------------------------------------------------------------------*/
+    .title {
+        padding-bottom: 20px;
+    }
 
-.title h2{
-    color: #ed0080;
-    font-weight: 600;
-    font-size: 2.2em;
-    font-family: 'Open Sans', sans-serif;
-    border-bottom: 2px solid #ed0080;
-}
-/*---------------------------------------------cac diem du lich pho nien------------------------------------------------------------------------------------------------*/
-.boxpronew__content h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    color: #fff;
-}
+    .title h2 {
+        color: #ed0080;
+        font-weight: 600;
+        font-size: 2.2em;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 2px solid #ed0080;
+    }
 
-.boxpronew__content p{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 0.9em;
-}
+    /*---------------------------------------------cac diem du lich pho nien------------------------------------------------------------------------------------------------*/
+    .boxpronew__content h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;
+        color: #fff;
+    }
 
-
-.item1 {
-    grid-area: header;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item2 {
-    grid-area: menu;
-    width: 100%;
-    height: 420px;
-    position: relative;
-}
-.item3  {
-    grid-area: right;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item4  {
-    grid-area: left;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item5  {
-    grid-area: mint;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item1 img{width: 100%; height: 200px; object-fit: cover;}
-.item2 img{width: 100%; height: 420px; object-fit: cover;}
-.item3 img{width: 100%; height: 200px; object-fit: cover;}
-.item4 img{width: 100%; height: 200px; object-fit: cover;}
-.item5 img{width: 100%; height: 200px; object-fit: cover;}
+    .boxpronew__content p {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        font-size: 0.9em;
+    }
 
 
-.grid-container {
-display: grid;
-grid-template-areas:
-    'menu menu menu menu  header header left left ' /*này là hàng*/
-    'menu menu menu menu  right right mint mint'  /*này là hàng*/
-    ;
-background-color: #f7f7f7;
-    column-gap: 15px;
+    .item1 {
+        grid-area: header;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
 
-}
+    .item2 {
+        grid-area: menu;
+        width: 100%;
+        height: 420px;
+        position: relative;
+    }
 
-.boxpronew__content{
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    transition: 0.5s;
-    opacity: 0;
-}
-.boxpronew__content h1{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-}
-.boxpronew__content p{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 0.9em;
-    padding-top: 10px;
-}
-.boximgpro__rong {
-    z-index: 2;
-}
-.boximgpro__rong{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    .item3 {
+        grid-area: right;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
 
-}
-.boximgpro__rong:hover ~ .boxpronew__content{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: block;
-    opacity: 1;
-    top: 0%;
-    z-index: 1;
-    cursor: pointer;
-}
-/*-------------------------------------------box sp------------------------------------------------------------------------------------------------------------------------------*/
-.box{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px; /*khoảng cách giữa các cột */
-    justify-items: center;
-}
+    .item4 {
+        grid-area: left;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
 
+    .item5 {
+        grid-area: mint;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
 
-/*---------------------------------gallery-----------------------------------------------------------------------------------------------------------------------------*/
-.gallary{
-    height: 350px;
+    .item1 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 
-}
+    .item2 img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+    }
 
-.boxcenter{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0px 0px;
+    .item3 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 
-}
+    .item4 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 
-.column{
-    float: left;
-    width: 33.33%;   /*chieu rong cua moi cot, trừ thg này height: calc(25% - 8px)*/
-    height: 350px;   /*chieu cao tong*/
-}
-
-.column img{border: 5px solid #00b6f3;
-    width: calc(100% - 5px);/*do rong cua tam anh thi hinh no moi cach ra(khoangcach)*/
-    display: block;
-    margin: 4px 2px;
-    height: calc(33.33% - 25px);  /*px cang tang thi img cang thu lai*/
-    object-fit: cover; /*khong sai ti le hinh*/
-}
+    .item5 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 
 
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'menu menu menu menu  header header left left '
+            /*này là hàng*/
+            'menu menu menu menu  right right mint mint'
+            /*này là hàng*/
+        ;
+        background-color: #f7f7f7;
+        column-gap: 15px;
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.item{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    column-gap: 5px;
-    font-family: 'Open Sans', sans-serif;
-}
+    }
 
-.item-text li{
-    list-style: none;
-}
+    .boxpronew__content {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transition: 0.5s;
+        opacity: 0;
+    }
 
-.item-text i{
-    padding: 5px 10px;
-    font-size: 30px;
-    color: #fff;
-}
+    .boxpronew__content h1 {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+    }
 
-.item-1{
-    height: auto;
-    background-color: #ea5599;
-    border-radius: 10px;
-    padding: 10px 0px;
-}
+    .boxpronew__content p {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        font-size: 0.9em;
+        padding-top: 10px;
+    }
 
-.item-text a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.8em;
-    font-weight: 500;
-}
-/*------------------------------ĐỊA ĐIỂM SĂN ĐÓN----------------------------------------------------------*/
-.diadiem-sandon{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-}
+    .boximgpro__rong {
+        z-index: 2;
+    }
 
-/*-------------------------------------------------------------------------------*/
+    .boximgpro__rong {
+        position: absolute;
+        width: 100%;
+        height: 100%;
 
-.diemden-hangdau{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr  ;
-    column-gap: 10px;
-}
-.diemden{
-    width: 150px;
-    height: 150px;
+    }
 
-    text-align: center;
+    .boximgpro__rong:hover~.boxpronew__content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+        opacity: 1;
+        top: 0%;
+        z-index: 1;
+        cursor: pointer;
+    }
 
-}
-.diemden img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 10px solid #ed0080;
-    border-right: 5px solid transparent;
-}
-.diemden a{
-   
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #484747;
-}
-/*-----------------------------------------------------------------------------------*/
-.video{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.video_1 {
-    width:100%;
-    height: 400px;
-}
-.video-text h1{
-    text-align: left;
-    padding: 10px 20px;
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-}
-.video-text p{
-    text-align: left;
-    padding: 0px 20px;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
-.video-text img{
-    padding-left: 10px;
-    width: 8%;
-    
-}
+    /*-------------------------------------------box sp------------------------------------------------------------------------------------------------------------------------------*/
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        /*khoảng cách giữa các cột */
+        justify-items: center;
+    }
 
-/*-----------------------------------------------footer--------------------------------------------------------------------------------------------------------------------*/
 
-footer{
-    clear: both;
-    background: #ffffff;
-    width: 100%;
-    height: auto;
-    border-top: 1px solid #ed0080;
-}
+    /*---------------------------------gallery-----------------------------------------------------------------------------------------------------------------------------*/
+    .gallary {
+        height: 350px;
 
-.footer-menu {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+    }
 
-.footer-menu label{
-    display: flex;
-    justify-content: space-between;
-    color: #ed0080;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-}
+    .boxcenter {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 0px;
 
-.footer-menu li{
-    list-style: none;/*bo dau cham*/
-}
+    }
 
-.footer-menu li a{
-    text-decoration: none; /*bo gach ngang*/
-    color: #000000;
-    font-size: 1em;
-    padding: 60px 10px;
-    font-family: 'Open Sans', sans-serif;
-}
+    .column {
+        float: left;
+        width: 33.33%;
+        /*chieu rong cua moi cot, trừ thg này height: calc(25% - 8px)*/
+        height: 350px;
+        /*chieu cao tong*/
+    }
 
-.footer__newletter h4{ /**/
-    color:#ed0080;
-    padding-bottom: 10px;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
+    .column img {
+        border: 5px solid #00b6f3;
+        width: calc(100% - 5px);
+        /*do rong cua tam anh thi hinh no moi cach ra(khoangcach)*/
+        display: block;
+        margin: 4px 2px;
+        height: calc(33.33% - 25px);
+        /*px cang tang thi img cang thu lai*/
+        object-fit: cover;
+        /*khong sai ti le hinh*/
+    }
 
-.footer__newletter p { /**/
-    font-size: 0.6em;
-    color: rgb(0, 0, 0);
-    padding-bottom: 10px;
-}
 
-.footer__newletter input {
-    padding: 10px;
-    border: 1px solid ;
-    margin: 20px 0px;
-    outline: none; /*bo duong vien khung input*/
-    font-variant: small-caps;
-}
 
-.footer__newletter input::placeholder {
-    font-variant: small-caps;
-}
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-.footer__newletter button {
-    text-align: center;
-    padding-bottom: 10px;
-    margin: 20px 0px;
-    padding: 10px 10px;
-    color: rgb(255, 255, 255) ;
-    background-color: #ed0080;
-    border: none;
-}
-.gmap_iframe{
-    padding: 20px 30px;
-    width: 100% !important;
-    height: 300px !important;
-}
+    .item-text li {
+        list-style: none;
+    }
 
-/*--------------------------------------CHI TIET-----------------------------------*/
-/*box tong*/
-.detali-box{
-    display: grid;
-    grid-template-columns:1fr ;
-}
-/*box-left--tieu de*/
-.box-top{
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #ffffff;
-}
-.box-top h1{
-    text-align: left;
-    padding: 10px 0px ;
-    font-size: 1.5em;
-}
-/* 2 box left and right big*/
-.box-left{
-    display: grid;
-    grid-template-columns:1fr ;
-    background-color: #ffffff;
-}
-.box-right{
-    /* display: grid;
+    .item-text i {
+        padding: 5px 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .item-1 {
+        height: auto;
+        background-color: #ea5599;
+        border-radius: 10px;
+        padding: 10px 0px;
+    }
+
+    .item-text a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+
+    /*------------------------------ĐỊA ĐIỂM SĂN ĐÓN----------------------------------------------------------*/
+    .diadiem-sandon {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+
+    .diemden-hangdau {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .diemden {
+        width: 150px;
+        height: 150px;
+
+        text-align: center;
+
+    }
+
+    .diemden img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 10px solid #ed0080;
+        border-right: 5px solid transparent;
+    }
+
+    .diemden a {
+
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #484747;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    .video {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .video_1 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .video-text h1 {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 2em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .video-text p {
+        text-align: left;
+        padding: 0px 20px;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .video-text img {
+        padding-left: 10px;
+        width: 8%;
+
+    }
+
+    /*-----------------------------------------------footer--------------------------------------------------------------------------------------------------------------------*/
+
+    footer {
+        clear: both;
+        background: #ffffff;
+        width: 100%;
+        height: auto;
+        border-top: 1px solid #ed0080;
+    }
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer-menu label {
+        display: flex;
+        justify-content: space-between;
+        color: #ed0080;
+        font-size: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer-menu li {
+        list-style: none;
+        /*bo dau cham*/
+    }
+
+    .footer-menu li a {
+        text-decoration: none;
+        /*bo gach ngang*/
+        color: #000000;
+        font-size: 1em;
+        padding: 60px 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer__newletter h4 {
+        /**/
+        color: #ed0080;
+        padding-bottom: 10px;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer__newletter p {
+        /**/
+        font-size: 0.6em;
+        color: rgb(0, 0, 0);
+        padding-bottom: 10px;
+    }
+
+    .footer__newletter input {
+        padding: 10px;
+        border: 1px solid;
+        margin: 20px 0px;
+        outline: none;
+        /*bo duong vien khung input*/
+        font-variant: small-caps;
+    }
+
+    .footer__newletter input::placeholder {
+        font-variant: small-caps;
+    }
+
+    .footer__newletter button {
+        text-align: center;
+        padding-bottom: 10px;
+        margin: 20px 0px;
+        padding: 10px 10px;
+        color: rgb(255, 255, 255);
+        background-color: #ed0080;
+        border: none;
+    }
+
+    .gmap_iframe {
+        padding: 20px 30px;
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    /*--------------------------------------CHI TIET-----------------------------------*/
+    /*box tong*/
+    .detali-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /*box-left--tieu de*/
+    .box-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #ffffff;
+    }
+
+    .box-top h1 {
+        text-align: left;
+        padding: 10px 0px;
+        font-size: 1.5em;
+    }
+
+    /* 2 box left and right big*/
+    .box-left {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #ffffff;
+    }
+
+    .box-right {
+        /* display: grid;
     grid-template-columns:450px ; */
-    /* background: #ed0080; */background-color: rgb(255, 255, 255);
-    /* background: linear-gradient(90deg,#ed0080 0,#be3b98 100%); */
+        /* background: #ed0080; */
+        background-color: rgb(255, 255, 255);
+        /* background: linear-gradient(90deg,#ed0080 0,#be3b98 100%); */
 
-}
-/*box left--5 ngoi sao va danh gia*/
-.detali-box-icon{
-    display: flex;
-}
-.detali-box-icon p{
-    padding: 0px 20px;
-}
-.detali-box-icon i{
-    color: rgb(255, 204, 0);
-}
+    }
 
-/*box left--img-lon va nho*/
-.detail-img-tall{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px 20px;
-}
+    /*box left--5 ngoi sao va danh gia*/
+    .detali-box-icon {
+        display: flex;
+    }
 
-.detail-img-tall img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
+    .detali-box-icon p {
+        padding: 0px 20px;
+    }
 
-.detail-img-small{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-   padding: 0px 20px;
-   column-gap: 20px;
-}
+    .detali-box-icon i {
+        color: rgb(255, 204, 0);
+    }
 
-.detail-img-small img{
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-}
-/*box left-- chi tiet 1*/
-.detail-left-bottom{
-    padding: 0px 20px;
-}
-.detail-lt{
-    border-bottom:2px solid #ed0080 ;
-    padding-top: 30px;
+    /*box left--img-lon va nho*/
+    .detail-img-tall {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px 20px;
+    }
 
-}
-.detail-lt p{
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.detail-lt i {
-    color: #ed0080;
-}
-.detail-lt-1, .detail-lt-2, .detail-lt-3, .detail-lt-4{
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  100px 1fr ;
+    .detail-img-tall img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
 
-}
-.detail-lt-1 p, .detail-lt-2 p, .detail-lt-3 p, .detail-lt-4 p{
+    .detail-img-small {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0px 20px;
+        column-gap: 20px;
+    }
 
-}
-/*box left-- chi tiet 2*/
-.detail-left-bottom-2{
-    padding: 10px 20px;
-}
+    .detail-img-small img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
 
-/*box-left--phone-input*/
-.detail-left-bottom-phone{
-    padding: 10px 20px;
-}
-.detail-lt-bot-phone-inp{
-    display: flex;
-    padding-top: 15px;
-}
+    /*box left-- chi tiet 1*/
+    .detail-left-bottom {
+        padding: 0px 20px;
+    }
 
-.detail-lt-bot-phone-inp-1 ::placeholder{
-    padding: 0px 20px;
-}
-.detail-lt-bot-phone-inp-1 input{
-    width: 400px;
-    height: 50px;
-    background-color: #ece7e7;
-    border: none;
-}
-.detail-lt-bot-phone-inp-2 input{
-    width: 100px;
-    height: 50px;
-    background-color: #ed0080;
-    border: none;
-    color: #fff;
-}
-/*b0x-left--chi tiet 3*/
-.detail-left-bottom-3 p{
-    padding: 5px 0px;
-}
-.detail-lt-bot-h1{
-    padding: 10px 20px;
+    .detail-lt {
+        border-bottom: 2px solid #ed0080;
+        padding-top: 30px;
 
-}
-.detail-lt-bot-h1 h2{
-    border-bottom:2px solid #ed0080;
-}
-.detail-lt-bot-P {
-    padding: 0px 30px;
-}
-.detail-lt-bot-p {
-    padding: 10px 60px;
-}
+    }
+
+    .detail-lt p {
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .detail-lt i {
+        color: #ed0080;
+    }
+
+    .detail-lt-1, .detail-lt-2, .detail-lt-3, .detail-lt-4 {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 100px 1fr;
+
+    }
+
+    .detail-lt-1 p, .detail-lt-2 p, .detail-lt-3 p, .detail-lt-4 p {}
+
+    /*box left-- chi tiet 2*/
+    .detail-left-bottom-2 {
+        padding: 10px 20px;
+    }
+
+    /*box-left--phone-input*/
+    .detail-left-bottom-phone {
+        padding: 10px 20px;
+    }
+
+    .detail-lt-bot-phone-inp {
+        display: flex;
+        padding-top: 15px;
+    }
+
+    .detail-lt-bot-phone-inp-1 ::placeholder {
+        padding: 0px 20px;
+    }
+
+    .detail-lt-bot-phone-inp-1 input {
+        width: 400px;
+        height: 50px;
+        background-color: #ece7e7;
+        border: none;
+    }
+
+    .detail-lt-bot-phone-inp-2 input {
+        width: 100px;
+        height: 50px;
+        background-color: #ed0080;
+        border: none;
+        color: #fff;
+    }
+
+    /*b0x-left--chi tiet 3*/
+    .detail-left-bottom-3 p {
+        padding: 5px 0px;
+    }
+
+    .detail-lt-bot-h1 {
+        padding: 10px 20px;
+
+    }
+
+    .detail-lt-bot-h1 h2 {
+        border-bottom: 2px solid #ed0080;
+    }
+
+    .detail-lt-bot-P {
+        padding: 0px 30px;
+    }
+
+    .detail-lt-bot-p {
+        padding: 10px 60px;
+    }
 
 
-/*box-right--cai bang*/
-.detail-right{
+    /*box-right--cai bang*/
+    .detail-right {
 
-    border: 1px solid black;
-    margin: 20px 60px;
-    padding: 0px 10px; /*ben trong*/
-}
-.detail-right .b-strong{
-    font-weight: 600;
-}
-.detail-rg{
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  1fr ;
-    border-bottom: 1px solid black;
-    color: #ed0080;
-}
-.detail-rg-1, .detail-rg-2, .detail-rg-3, .detail-rg-4, .detail-rg-5 {
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  1fr 1fr ;
-    border-bottom: 1px solid black;
-}
+        border: 1px solid black;
+        margin: 20px 60px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
 
-/*box-right--bang gia*/
-.detail-right-bottom{
-    background: linear-gradient(90deg,#ed0080 0,#be3b98 100%);
-    margin: 20px 60px;
-    padding: 0px 10px; /*ben trong*/
-}
-.detail-rg-bt-text{
-    display: flex;
-}
-.detail-rg-bt-text p{
-    padding: 10px;
-    padding-left: 10px;
-    color: #fff;
-}
-.etail-rg-bt-text-B{
-    font-size: 1.5em;
-    font-weight: 600;
-}
-.etail-rg-bt-text-N{
-    text-decoration: line-through;
-}
-/*box-right--bang gia--input*/
-.detail-rg-bt-input{
-    display: grid;
-    row-gap: 10px;
-    padding-bottom: 20px;
-}
-.detail-rg-bt-input input{
-   border-radius: 5px;
-   border: none;
-   height: 35px;
-}
-/*box-right--cac danh muc*/
-.detail-right-bottom-2{
-    margin: 20px 60px;
-    padding: 0px 10px; /*ben trong*/
-}
-.detail-rg-bt-input a input{
-    width: 600px;
- }
-.detail-rg-bt-text-2 p{
-    padding: 10px 0px;
-}
-.detail-rg-bt-text-2 p i{
-    padding: 0px 10px;
-}
+    .detail-right .b-strong {
+        font-weight: 600;
+    }
 
-/*---------------------------------------------------------------------*/
-.dat-tour-1{
-    margin-top: 40px;
-    background-color: #8d8d8d;
-    display: grid;
-    grid-template-columns: 1fr ;
+    .detail-rg {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 1fr;
+        border-bottom: 1px solid black;
+        color: #ed0080;
+    }
 
-}
-.dat-tour-1-img{
-    background-color: #e7a3c1;
-    width: 100%;
-    height: 300px;
-}
-.dat-tour-1-img img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-.dat-tour-1-right{
-    background-color: rgb(255, 255, 255);
-}
-/**/
-.dat-tour-1-right{
-   width: 100%;
-   height: auto;
+    .detail-rg-1, .detail-rg-2, .detail-rg-3, .detail-rg-4, .detail-rg-5 {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid black;
+    }
 
-}
-.right-table{
-    margin-top: 30px;
-    border: 1px solid black;
-}
-.right-table-top1{
-    border-bottom: 1px solid black;
-    padding: 10px 10px;
-}
-.right-table-top2{
-   display: flex;
-   justify-content: space-between;
-   padding: 20px 10px;
-}
-.right-table-top2 li{
-    list-style: none;
-}
-.right-table-top2 a{
-    text-decoration: none;
-    color: #484747;
-}
-/**/
+    /*box-right--bang gia*/
+    .detail-right-bottom {
+        background: linear-gradient(90deg, #ed0080 0, #be3b98 100%);
+        margin: 20px 60px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
 
-.dat-tour-4{
-    display: grid;
-    grid-template-columns: 1fr ;
-}
-.dat-tour-4 label{
-    display: grid;
-    grid-template-columns: 1fr ;
-    padding-left: 15px;
-}
-.dat-tour-4 input{
-    margin: 10px 0px;
-   padding: 10px 270px;
-   border: 1px solid rgb(182, 182, 182);
-}
+    .detail-rg-bt-text {
+        display: flex;
+    }
 
-/**/
+    .detail-rg-bt-text p {
+        padding: 10px;
+        padding-left: 10px;
+        color: #fff;
+    }
 
-.dat-tour-7-input{
-    padding: 20px 90px;/**/
-}
+    .etail-rg-bt-text-B {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
 
-.dat-tour-7-input1{/**/
-    padding: 20px 100px;
+    .etail-rg-bt-text-N {
+        text-decoration: line-through;
+    }
 
-}
-.dat-tour-7 button{/**/
-    margin: 0px 300px;
-   margin-top: 30px;
-   padding: 5px 15px;
-   background-color: #ed0080;
-   color: #fff;
-   border: none;
-}
+    /*box-right--bang gia--input*/
+    .detail-rg-bt-input {
+        display: grid;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .detail-rg-bt-input input {
+        border-radius: 5px;
+        border: none;
+        height: 35px;
+    }
+
+    /*box-right--cac danh muc*/
+    .detail-right-bottom-2 {
+        margin: 20px 60px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
+
+    .detail-rg-bt-input a input {
+        width: 600px;
+    }
+
+    .detail-rg-bt-text-2 p {
+        padding: 10px 0px;
+    }
+
+    .detail-rg-bt-text-2 p i {
+        padding: 0px 10px;
+    }
+
+    /*---------------------------------------------------------------------*/
+    .dat-tour-1 {
+        margin-top: 40px;
+        background-color: #8d8d8d;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .dat-tour-1-img {
+        background-color: #e7a3c1;
+        width: 100%;
+        height: 300px;
+    }
+
+    .dat-tour-1-img img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .dat-tour-1-right {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /**/
+    .dat-tour-1-right {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .right-table {
+        margin-top: 30px;
+        border: 1px solid black;
+    }
+
+    .right-table-top1 {
+        border-bottom: 1px solid black;
+        padding: 10px 10px;
+    }
+
+    .right-table-top2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
+
+    .right-table-top2 li {
+        list-style: none;
+    }
+
+    .right-table-top2 a {
+        text-decoration: none;
+        color: #484747;
+    }
+
+    /**/
+
+    .dat-tour-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .dat-tour-4 label {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 15px;
+    }
+
+    .dat-tour-4 input {
+        margin: 10px 0px;
+        padding: 10px 270px;
+        border: 1px solid rgb(182, 182, 182);
+    }
+
+    /**/
+
+    .dat-tour-7-input {
+        padding: 20px 90px;
+        /**/
+    }
+
+    .dat-tour-7-input1 {
+        /**/
+        padding: 20px 100px;
+
+    }
+
+    .dat-tour-7 button {
+        /**/
+        margin: 0px 300px;
+        margin-top: 30px;
+        padding: 5px 15px;
+        background-color: #ed0080;
+        color: #fff;
+        border: none;
+    }
 
 }
 
@@ -2438,1048 +2817,1239 @@ footer{
 
 /* Laptop  và máy tính bảng ngang*/
 @media screen and (min-width:1024px) {
-.header--sign-mobile{  /*menu thẻ nav*/
-    display: none;
-}
-.header-sort{ /*icon bar của thẻ header*/
-    display: none;
-}
-.nav-bars { /*icon bar của thẻ nav*/
-    display: none;
-}
-.nav_list {    /*menu laptop*/
-    display: block;
-}
-.nav_list-mobile{ /*menu mobile*/
-    display: none;
-}
-.container-header{
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0px  0px
-}
-.container-nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.container{
-    width: 1170px;
-    margin: 0 auto;
-    padding: 20px 20px;
-}
-/*--------------------------------------header--------------------------------------------------------------------------------------------------------------------------*/
-header{
-    background-color: white;
-    width: 100%;
-    height: 150px;
-    line-height: 150px;
-}
-
-.header_top1{
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
-    
-}
-
-.header-img{
-    width: 23%;
-    height: 150px;
-}
-
-.header-img img{
-    width: 100%;
-    object-fit: cover;
-    height: 150px;
-    line-height: 150px;
-}
-
-.header-sign ul{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 600px;
-}
-
-.header-sign li{
-    list-style: none;
-}
-
-.header-sign a{
-    padding: 0px 10px;
-    text-decoration: none;
-    color: black;
-}
-.header-select{
-    display: block;
-    padding-right: 40px;
-}
-/*-------------------------------------------------banner-------------------------------------------------------------------------------------------------------------------------------------------*/
-.banner{
-    position: relative;
-}
-
-.banner_list img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.banner-text{
-    border: 1px solid white;
-    position: absolute;
-    width: 700px;
-    height: 140px;
-    top: 100px;
-    left: 100px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    background: transparent ;
-    backdrop-filter: blur(4px) ; /*làm mờ 20 pixel cho khu vực phía sau phần tử.*/
-}
-
-.banner-input{
-    display: grid;
-    grid-template-columns: 1fr;
-    position: relative;
-}
-.banner-input i{
-    position: absolute;
-    top: 23px;
-    left: 35px;
-}
-.banner-input ::placeholder{
-    color: orangered;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding-left: 15px;
-}
-.banner-input input{
-    padding: 15px 15px;
-    border: none;
-    border-radius: 5px;
-}
-
-.banner-input-2 i{
-    position: absolute;
-    top: 23px;
-    left: 35px;
-}
-.banner-input-2  .fa-solid{
-    position: absolute;
-    top: 23px;
-    left: 260px;
-}
-.banner-input-2 ::placeholder{
-    color: orangered;
-    font-weight: 500;
-    font-family: sans-serif;
-    padding-left: 15px;
-}
-.banner-input-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px 10px;
-    position: relative;
-}
-.banner-input-2 input{
-    padding: 15px 15px;
-    border: none;
-    border-radius: 5px;
-}
-
-
-.text-submit{
-    background-color: orangered;
-    color: white;
-}
-
-
-
-/*---------------------------------------font awesome NAV--------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*-------------------------------------------nav---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.nav{
-
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    background-color: #ed0080; /*nguyên 1 thanh nav*/
-}
-
-.nav_list ul{
-    display: flex;
-   justify-content: space-between;
-
-}
-
-.nav_list li{
-    list-style: none;
-}
-
-.nav_list a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-}
-
-.nav_list a:hover{
-    background: #ed0080;/*#3B94B8*/
-    color: #f6f0f0;
-}
-
-/*--------------------------------------------nav_list----------------------------------------------------------------------------------------------------------------------------------*/
-.nav_list ul li ul{
-    position: absolute; /* Đặt position thuộc tính của phần tử được nhắm mục tiêu thành absolute*/
-    display: flex;
-    flex-direction: column; /* các mục được xếp chồng lên nhau theo chiều dọc từ trên xuống dưới. */
-    background-color:#ed0080;
-    border: 1px solid #ed0080;
-    display: none; /*phần tử sẽ không được hiển thị trên trang và nó sẽ không chiếm bất kỳ dung lượng nào. */
-    padding: 0px 0px;
-}
-
-.nav_list ul li ul li{
-    height: 40px;
-    line-height: 40px;
-}
-
-/*---------------------------------------------------Tìm kiếm---------------------------------------------------------------------------------------------------------------------*/
-.category-list{
-    background-color: #ed0080;
-    width: 400px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0px 10px;
-    border-right:1px solid #ed0080;
-    border-left:1px solid #ed0080;
-}
-
-/*-----------------------------------------------------Địa điểm ---------------------------------------------------------------------------------------------------------------------*/
-.category-list-one:hover>.category-list--menu-one{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-one{
-    background: #ed0080;
-    width:350px;
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ed0080;
-}
-
-.category-list--menu-one{
-
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-one li{
-    background-color: #fff;
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:200px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-one li a{
-
-    text-decoration: none;
-    color: #000000;
-    font-size: 17px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-one li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-}
-
-/*-----------------------------------------------------Ngày khởi hành-------------------------------------------------------------------------------------------------------------------- */
-
-.category-list-two:hover>.category-list--menu-two{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-two{
-    background: #ed0080;
-    width:400px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ed0080;
-}
-
-.category-list--menu-two{
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-two li{
-    background-color: #fff;
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:200px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-two li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 17px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-two li:hover {
-    background: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #fff;
-}
-
-/*------------------------------------------------------------Thời gian---------------------------------------------------------------- ----------------------------------------------*/
-
-.category-list-three:hover>.category-list--menu-three{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-three{
-    background: #ed0080;
-    width: 400px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-    border-right:1px solid #ed0080;
-}
-
-.category-list--menu-three{
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-three li{
-    background-color: rgb(255, 254, 254);
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:200px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-three li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 17px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-three li:hover {
-    background-color: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #ffffff;
-}
-
-/*------------------------------------------------------Giá tiền ----------------------------------------------------------------------------------------------------------------------------------------------*/
-.category-list-four:hover>.category-list--menu-four{
-    display: block; /* làm cho phần tử hiển thị. */
-    z-index: 4; /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
-}
-
-.category-list-four{
-    background: #ed0080;
-    width:400px; /* độ rộng của thanh nav màu vàng*/
-    height: 50px;
-    font-weight: 500;
-    transition: 1s; /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
-    position: relative; /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
-     border-right:1px solid #ed0080;
-}
-
-.category-list--menu-four{
-    position: absolute;
-    left: 0px;
-    z-index: 1; /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
-    animation: hiendandan 1s ease-in-out forwards; /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
-}
-
-.category-list--menu-four li{
-    background-color: rgb(255, 254, 254);
-    border-bottom: 2px solid #ed0080;/*#22566B #3B94B8*/
-    height: 35px;
-    line-height: 35px;
-    list-style: none;
-    padding: 0px 10px;
-    width:200px; /* độ rộng của thẻ menu con*/
-}
-
-.category-list--menu-four li a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 17px; /*kích thước chữ menu con*/
-}
-
-.category-list--menu-four li:hover {
-    background-color: #ed0080; /*hover vào các thanh con menu MÀU VÀNG*/
-    color: #ffffff;
-}
-
-@keyframes hiendandan { /* @keyframeslà một quy tắc CSS xác định hành vi của hoạt ảnh trong một khoảng thời gian.*/
-    from {
-    opacity: 0; /* Khi bắt đầu hoạt ảnh (0%), phần tử sẽ có độ mờ bằng 0, nghĩa là nó sẽ hoàn toàn trong suốt.*/
+    .header--sign-mobile {
+        /*menu thẻ nav*/
+        display: none;
     }
-    to {
-    opacity: 1; /* Khi hoạt ảnh diễn ra, độ mờ đục sẽ tăng dần từ 0 lên 1. */
+
+    .header-sort {
+        /*icon bar của thẻ header*/
+        display: none;
     }
-}
 
-/*------------------------------------------------tieu de H2----------------------------------------------------------------------------------------------------*/
-.title {
-    /* padding: 20px 0px; */
-    padding-bottom: 20px;
-}
-
-.title h2{
-    color: #ed0080;
-    font-weight: 600;
-    font-size: 2.2em;
-    border-bottom: 2px solid #ed0080;
-    font-family: 'Roboto Slab', serif;
-}
-/**/
-
-.item1 {
-    grid-area: header;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item2 {
-    grid-area: menu;
-    width: 100%;
-    height: 410px;
-    position: relative;
-}
-.item3  {
-    grid-area: right;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item4  {
-    grid-area: left;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item5  {
-    grid-area: mint;
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-.item1 img{width: 100%; height: 200px; object-fit: cover;}
-.item2 img{width: 100%; height: 410px; object-fit: cover;}
-.item3 img{width: 100%; height: 200px; object-fit: cover;}
-.item4 img{width: 100%; height: 200px; object-fit: cover;}
-.item5 img{width: 100%; height: 200px; object-fit: cover;}
-
-
-.grid-container {
-display: grid;
-grid-template-areas:
-    'menu menu menu menu  header header left left ' /*này là hàng*/
-    'menu menu menu menu  right right mint mint'  /*này là hàng*/
-    ;
-    background-color: #f7f7f7;
-    row-gap: 15px;
-}
-
-.boxpronew__content{
-    position: absolute;
-    text-align: center;
-    top: 10%;
-    transition: 0.5s;
-    opacity: 0;
-}
-.boxpronew__content h1{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    padding-top: 10px;
-}
-.boxpronew__content p{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-
-}
-.boximgpro__rong {
-    z-index: 2;
-}
-.boximgpro__rong{
-    position: absolute;
-    width: 100%;
-
-}
-.boximgpro__rong:hover ~ .boxpronew__content{width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: block;
-    opacity: 1;
-    top: 0%;
-    z-index: 1;
-    cursor: pointer;
-}
-
-
-/*-------------------------------------------box sp------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.box{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px; /*khoảng cách giữa các cột */
-    justify-items: center;
-}
-
-
-/*---------------------------------gallery--------------------------------------------------------------------------------------------------------------------*/
-.gallary{
-    height: 600px;
-}
-
-.boxcenter{
-    width: 100%;
-    margin: 0 auto;
-    /* padding: 50px 0px; */
-}
-
-.column{
-    float: left;
-    width: 33.33%;   /*chieu rong cua moi cot, trừ thg này height: calc(25% - 8px)*/
-    height: 600px;   /*chieu cao tong*/
-}
-
-.column img{
-    width: calc(100% - 5px);/*do rong cua tam anh thi hinh no moi cach ra(khoangcach)*/
-    display: block;
-    margin: 4px 2px;
-    height: calc(33.33% - 12px);  /*px cang tang thi img cang thu lai*/
-    object-fit: cover; /*khong sai ti le hinh*/
-}
-
-.column img{
-    opacity: 0.7;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.column img:hover{
-    border: none;
-    opacity: 1;
-}
-
-.lr img{
-    height: calc(33.33% - -85px) !important;
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.item{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 30px;
-    font-family: 'Open Sans', sans-serif;
-}
-.item-text {
-    display: flex;
-    justify-content: space-between;
-}
-
-.item-text li{
-    list-style: none;
-}
-
-.item-text i{
-    padding: 10px 10px;
-    font-size: 40px;
-    color: #fff;
-}
-
-.item-1{
-    height: auto;
-    background-color: #ea5599;
-    border-radius: 10px;
-    padding: 10px 0px;
-}
-
-.item-text a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.8em;
-    font-weight: 500;
-}
-/*------------------------------ĐỊA ĐIỂM SĂN ĐÓN----------------------------------------------------------*/
-.diadiem-sandon{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-
-}
-
-
-/*-------------------------------------------------------------------------------*/
-
-.diemden-hangdau{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    
-}
-.diemden{
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    overflow: hidden;
-
-}
-.diemden img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 10px solid #ed0080;
-    transition: scale 400ms;
-    border-right: 5px solid transparent ;
-    animation: quayTron 20s infinite linear; /*thoi gian quay, chay vo tan,kieu chay cham*/
-}
-@keyframes quayTron {
-    /*from chạy từ trạng thái nào đó tới trạng thái lúc đầu*/
-    /*to chạy từ lúc đầu đến trạng thái nào đó*/
-    to{
-        transform: rotate(360deg);
+    .nav-bars {
+        /*icon bar của thẻ nav*/
+        display: none;
     }
-}
-.diemden img:hover{
-    scale: 120%;
-    border-radius: 50%;
-    border: 10px solid #ffffff;
-    animation: quayTron 0s;
-}
-/* .diemden a:hover{
+
+    .nav_list {
+        /*menu laptop*/
+        display: block;
+    }
+
+    .nav_list-mobile {
+        /*menu mobile*/
+        display: none;
+    }
+
+    .container-header {
+        width: 1170px;
+        margin: 0 auto;
+        padding: 0px 0px
+    }
+
+    .container-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    /*--------------------------------------header--------------------------------------------------------------------------------------------------------------------------*/
+    header {
+        background-color: white;
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .header_top1 {
+        display: flex;
+        justify-content: space-between;
+        height: 150px;
+
+    }
+
+    .header-img {
+        width: 23%;
+        height: 150px;
+    }
+
+    .header-img img {
+        width: 100%;
+        object-fit: cover;
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .header-sign ul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 600px;
+    }
+
+    .header-sign li {
+        list-style: none;
+    }
+
+    .header-sign a {
+        padding: 0px 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header-select {
+        display: block;
+        padding-right: 40px;
+    }
+
+    /*-------------------------------------------------banner-------------------------------------------------------------------------------------------------------------------------------------------*/
+    .banner {
+        position: relative;
+    }
+
+    .banner_list img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .banner-text {
+        border: 1px solid white;
+        position: absolute;
+        width: 700px;
+        height: 140px;
+        top: 100px;
+        left: 100px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        background: transparent;
+        backdrop-filter: blur(4px);
+        /*làm mờ 20 pixel cho khu vực phía sau phần tử.*/
+    }
+
+    .banner-input {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+
+    .banner-input i {
+        position: absolute;
+        top: 23px;
+        left: 35px;
+    }
+
+    .banner-input ::placeholder {
+        color: orangered;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding-left: 15px;
+    }
+
+    .banner-input input {
+        padding: 15px 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .banner-input-2 i {
+        position: absolute;
+        top: 23px;
+        left: 35px;
+    }
+
+    .banner-input-2 .fa-solid {
+        position: absolute;
+        top: 23px;
+        left: 260px;
+    }
+
+    .banner-input-2 ::placeholder {
+        color: orangered;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding-left: 15px;
+    }
+
+    .banner-input-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px 10px;
+        position: relative;
+    }
+
+    .banner-input-2 input {
+        padding: 15px 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+    .text-submit {
+        background-color: orangered;
+        color: white;
+    }
+
+
+
+    /*---------------------------------------font awesome NAV--------------------------------------------------------------------------------------------------------------------------*/
+
+
+    /*-------------------------------------------nav---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    .nav {
+
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background-color: #ed0080;
+        /*nguyên 1 thanh nav*/
+    }
+
+    .nav_list ul {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav_list li {
+        list-style: none;
+    }
+
+    .nav_list a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+    }
+
+    .nav_list a:hover {
+        background: #ed0080;
+        /*#3B94B8*/
+        color: #f6f0f0;
+    }
+
+    /*--------------------------------------------nav_list----------------------------------------------------------------------------------------------------------------------------------*/
+    .nav_list ul li ul {
+        position: absolute;
+        /* Đặt position thuộc tính của phần tử được nhắm mục tiêu thành absolute*/
+        display: flex;
+        flex-direction: column;
+        /* các mục được xếp chồng lên nhau theo chiều dọc từ trên xuống dưới. */
+        background-color: #ed0080;
+        border: 1px solid #ed0080;
+        display: none;
+        /*phần tử sẽ không được hiển thị trên trang và nó sẽ không chiếm bất kỳ dung lượng nào. */
+        padding: 0px 0px;
+    }
+
+    .nav_list ul li ul li {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /*---------------------------------------------------Tìm kiếm---------------------------------------------------------------------------------------------------------------------*/
+    .category-list {
+        background-color: #ed0080;
+        width: 400px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0px 10px;
+        border-right: 1px solid #ed0080;
+        border-left: 1px solid #ed0080;
+    }
+
+    /*-----------------------------------------------------Địa điểm ---------------------------------------------------------------------------------------------------------------------*/
+    .category-list-one:hover>.category-list--menu-one {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-one {
+        background: #ed0080;
+        width: 350px;
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-one {
+
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-one li {
+        background-color: #fff;
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 200px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-one li a {
+
+        text-decoration: none;
+        color: #000000;
+        font-size: 17px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-one li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+    }
+
+    /*-----------------------------------------------------Ngày khởi hành-------------------------------------------------------------------------------------------------------------------- */
+
+    .category-list-two:hover>.category-list--menu-two {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-two {
+        background: #ed0080;
+        width: 400px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-two {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-two li {
+        background-color: #fff;
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 200px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-two li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 17px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-two li:hover {
+        background: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #fff;
+    }
+
+    /*------------------------------------------------------------Thời gian---------------------------------------------------------------- ----------------------------------------------*/
+
+    .category-list-three:hover>.category-list--menu-three {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-three {
+        background: #ed0080;
+        width: 400px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-three {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-three li {
+        background-color: rgb(255, 254, 254);
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 200px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-three li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 17px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-three li:hover {
+        background-color: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #ffffff;
+    }
+
+    /*------------------------------------------------------Giá tiền ----------------------------------------------------------------------------------------------------------------------------------------------*/
+    .category-list-four:hover>.category-list--menu-four {
+        display: block;
+        /* làm cho phần tử hiển thị. */
+        z-index: 4;
+        /* kiểm soát thứ tự sắp xếp theo chiều dọc của các phần tử chồng lên nhau trên trang web.*/
+    }
+
+    .category-list-four {
+        background: #ed0080;
+        width: 400px;
+        /* độ rộng của thanh nav màu vàng*/
+        height: 50px;
+        font-weight: 500;
+        transition: 1s;
+        /* hiệu ứng chuyển đổi sẽ mất một giây để hoàn thành.*/
+        position: relative;
+        /*có nghĩa là nó sẽ được định vị so với vị trí bình thường của nó trong luồng tài liệu.*/
+        border-right: 1px solid #ed0080;
+    }
+
+    .category-list--menu-four {
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        /* Thuộc tính này hữu ích khi bạn có các phần tử chồng lấp trên một trang và bạn muốn kiểm soát thứ tự hiển thị của chúng. */
+        animation: hiendandan 1s ease-in-out forwards;
+        /*  CSS chỉ định tên, thời lượng, chức năng định thời gian và chế độ tô màu cho hoạt ảnh. */
+    }
+
+    .category-list--menu-four li {
+        background-color: rgb(255, 254, 254);
+        border-bottom: 2px solid #ed0080;
+        /*#22566B #3B94B8*/
+        height: 35px;
+        line-height: 35px;
+        list-style: none;
+        padding: 0px 10px;
+        width: 200px;
+        /* độ rộng của thẻ menu con*/
+    }
+
+    .category-list--menu-four li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 17px;
+        /*kích thước chữ menu con*/
+    }
+
+    .category-list--menu-four li:hover {
+        background-color: #ed0080;
+        /*hover vào các thanh con menu MÀU VÀNG*/
+        color: #ffffff;
+    }
+
+    @keyframes hiendandan {
+
+        /* @keyframeslà một quy tắc CSS xác định hành vi của hoạt ảnh trong một khoảng thời gian.*/
+        from {
+            opacity: 0;
+            /* Khi bắt đầu hoạt ảnh (0%), phần tử sẽ có độ mờ bằng 0, nghĩa là nó sẽ hoàn toàn trong suốt.*/
+        }
+
+        to {
+            opacity: 1;
+            /* Khi hoạt ảnh diễn ra, độ mờ đục sẽ tăng dần từ 0 lên 1. */
+        }
+    }
+
+    /*------------------------------------------------tieu de H2----------------------------------------------------------------------------------------------------*/
+    .title {
+        /* padding: 20px 0px; */
+        padding-bottom: 20px;
+    }
+
+    .title h2 {
+        color: #ed0080;
+        font-weight: 600;
+        font-size: 2.2em;
+        border-bottom: 2px solid #ed0080;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    /**/
+
+    .item1 {
+        grid-area: header;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    .item2 {
+        grid-area: menu;
+        width: 100%;
+        height: 410px;
+        position: relative;
+    }
+
+    .item3 {
+        grid-area: right;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    .item4 {
+        grid-area: left;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    .item5 {
+        grid-area: mint;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    .item1 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .item2 img {
+        width: 100%;
+        height: 410px;
+        object-fit: cover;
+    }
+
+    .item3 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .item4 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .item5 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'menu menu menu menu  header header left left '
+            /*này là hàng*/
+            'menu menu menu menu  right right mint mint'
+            /*này là hàng*/
+        ;
+        background-color: #f7f7f7;
+        row-gap: 15px;
+    }
+
+    .boxpronew__content {
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .boxpronew__content h1 {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        padding-top: 10px;
+    }
+
+    .boxpronew__content p {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+
+    }
+
+    .boximgpro__rong {
+        z-index: 2;
+    }
+
+    .boximgpro__rong {
+        position: absolute;
+        width: 100%;
+
+    }
+
+    .boximgpro__rong:hover~.boxpronew__content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+        opacity: 1;
+        top: 0%;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+
+    /*-------------------------------------------box sp------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        /*khoảng cách giữa các cột */
+        justify-items: center;
+    }
+
+
+    /*---------------------------------gallery--------------------------------------------------------------------------------------------------------------------*/
+    .gallary {
+        height: 600px;
+    }
+
+    .boxcenter {
+        width: 100%;
+        margin: 0 auto;
+        /* padding: 50px 0px; */
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        /*chieu rong cua moi cot, trừ thg này height: calc(25% - 8px)*/
+        height: 600px;
+        /*chieu cao tong*/
+    }
+
+    .column img {
+        width: calc(100% - 5px);
+        /*do rong cua tam anh thi hinh no moi cach ra(khoangcach)*/
+        display: block;
+        margin: 4px 2px;
+        height: calc(33.33% - 12px);
+        /*px cang tang thi img cang thu lai*/
+        object-fit: cover;
+        /*khong sai ti le hinh*/
+    }
+
+    .column img {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .column img:hover {
+        border: none;
+        opacity: 1;
+    }
+
+    .lr img {
+        height: calc(33.33% - -85px) !important;
+    }
+
+    /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .item-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item-text li {
+        list-style: none;
+    }
+
+    .item-text i {
+        padding: 10px 10px;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .item-1 {
+        height: auto;
+        background-color: #ea5599;
+        border-radius: 10px;
+        padding: 10px 0px;
+    }
+
+    .item-text a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+
+    /*------------------------------ĐỊA ĐIỂM SĂN ĐÓN----------------------------------------------------------*/
+    .diadiem-sandon {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+
+    }
+
+
+    /*-------------------------------------------------------------------------------*/
+
+    .diemden-hangdau {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    .diemden {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        overflow: hidden;
+
+    }
+
+    .diemden img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 10px solid #ed0080;
+        transition: scale 400ms;
+        border-right: 5px solid transparent;
+        animation: quayTron 20s infinite linear;
+        /*thoi gian quay, chay vo tan,kieu chay cham*/
+    }
+
+    @keyframes quayTron {
+
+        /*from chạy từ trạng thái nào đó tới trạng thái lúc đầu*/
+        /*to chạy từ lúc đầu đến trạng thái nào đó*/
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .diemden img:hover {
+        scale: 120%;
+        border-radius: 50%;
+        border: 10px solid #ffffff;
+        animation: quayTron 0s;
+    }
+
+    /* .diemden a:hover{
     color: #4acefa;
 } */
-.diemden a{
- 
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #484747;
+    .diemden a {
 
-}
-/*-----------------------------------------------------------------------------------*/
-.video{
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-}
-.video_1 {
-    width: 60%;
-    height: 400px;
-}
-.video-text h1{
-    text-align: left;
-    padding: 20px 20px;
-    font-size: 3.4em;
-    font-family: 'Roboto', sans-serif;
-   
-}
-.video-text p{
-    text-align: left;
-    padding: 0px 20px;
-    font-size: 1.2em;
-    font-family: 'Open Sans', sans-serif;
-}
-.video-text img{
-    padding-left: 10px;
-    width: 15%;
-    
-}
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #484747;
 
+    }
 
-/*-----------------------------------------footer---------------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------*/
+    .video {
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+    }
 
+    .video_1 {
+        width: 60%;
+        height: 400px;
+    }
 
-footer{
-    clear: both;
-    background-color: #ffffff;
-    width: 100%;
-    height: auto;
-    border-top: 1px solid #ed0080;
-}
+    .video-text h1 {
+        text-align: left;
+        padding: 20px 20px;
+        font-size: 3.4em;
+        font-family: 'Roboto', sans-serif;
 
-.footer-menu {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 15px 0px;
-}
+    }
 
-.footer-menu label{
-    display: flex;
-    justify-content: space-between;
-    color: #ed0080;
-    font-weight: 600;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
+    .video-text p {
+        text-align: left;
+        padding: 0px 20px;
+        font-size: 1.2em;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-.footer-menu li{
-    list-style: none;/*bo dau cham*/
-}
+    .video-text img {
+        padding-left: 10px;
+        width: 15%;
 
-.footer-menu li a{
-    text-decoration: none; /*bo gach ngang*/
-    color: #000000;
-    font-size: 0.8em;
-}
-
-.footer__newletter h4{ /**/
-    color:#ed0080;
-    padding-bottom: 10px;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.footer__newletter p { /**/
-    font-size: 0.6em;
-    color: rgb(0, 0, 0);
-    padding-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.footer__newletter input {
-    padding: 10px;
-    border: 1px solid ;
-    margin: 20px 0px;
-    outline: none; /*bo duong vien khung input*/
-    font-variant: small-caps;
-}
-
-.footer__newletter input::placeholder {
-    font-variant: small-caps;
-}
-
-.footer__newletter button {
-    text-align: center;
-    padding-bottom: 10px;
-    margin: 20px 0px;
-    padding: 10px 10px;
-    color: rgb(255, 255, 255) ;
-    background-color: #ed0080;
-}
-.footer-menu-high{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-
-/*----------------------------------------CHI TIET--------------------------------*/
-/*box tong*/
-.detali-box{
-    display: grid;
-    grid-template-columns:1fr 450px;
-}
-/*box-left--tieu de*/
-.box-top{
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #ffffff;
-}
-.box-top h1{
-    text-align: left;
-    padding: 10px 0px ;
-    font-size: 1.5em;
-}
-/* 2 box left and right big*/
-.box-left{
-    background-color: #ffffff;
-}
-.box-right{
-    /* background: #ed0080; */background-color: rgb(255, 255, 255);
-    /* background: linear-gradient(90deg,#ed0080 0,#be3b98 100%); */
-
-}
-/*box left--5 ngoi sao va danh gia*/
-.detali-box-icon{
-    display: flex;
-}
-.detali-box-icon p{
-    padding: 0px 20px;
-}
-.detali-box-icon i{
-    color: rgb(255, 204, 0);
-}
-
-/*box left--img-lon va nho*/
-.detail-img-tall{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px 20px;
-}
-
-.detail-img-tall img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-.detail-img-small{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-   padding: 0px 20px;
-   column-gap: 20px;
-}
-
-.detail-img-small img{
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-}
-/*box left-- chi tiet 1*/
-.detail-left-bottom{
-    padding: 0px 20px;
-}
-.detail-lt{
-    border-bottom:2px solid #ed0080 ;
-    padding-top: 30px;
-
-}
-.detail-lt p{
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.detail-lt i {
-    color: #ed0080;
-}
-.detail-lt-1, .detail-lt-2, .detail-lt-3, .detail-lt-4{
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  100px 1fr ;
-
-}
-.detail-lt-1 p, .detail-lt-2 p, .detail-lt-3 p, .detail-lt-4 p{
-
-}
-/*box left-- chi tiet 2*/
-.detail-left-bottom-2{
-    padding: 10px 20px;
-}
-
-/*box-left--phone-input*/
-.detail-left-bottom-phone{
-    padding: 10px 20px;
-}
-.detail-lt-bot-phone-inp{
-    display: flex;
-    padding-top: 15px;
-}
-
-.detail-lt-bot-phone-inp-1 ::placeholder{
-    padding: 0px 20px;
-}
-.detail-lt-bot-phone-inp-1 input{
-    width: 400px;
-    height: 50px;
-    background-color: #ece7e7;
-    border: none;
-}
-.detail-lt-bot-phone-inp-2 input{
-    width: 100px;
-    height: 50px;
-    background-color: #ed0080;
-    border: none;
-    color: #fff;
-}
-/*b0x-left--chi tiet 3*/
-.detail-left-bottom-3 p{
-    padding: 5px 0px;
-}
-.detail-lt-bot-h1{
-    padding: 10px 20px;
-
-}
-.detail-lt-bot-h1 h2{
-    border-bottom:2px solid #ed0080;
-}
-.detail-lt-bot-P {
-    padding: 0px 30px;
-}
-.detail-lt-bot-p {
-    padding: 10px 60px;
-}
+    }
 
 
-/*box-right--cai bang*/
-.detail-right{
-
-    border: 1px solid black;
-    margin: 20px 60px;
-    padding: 0px 10px; /*ben trong*/
-}
-.detail-right .b-strong{
-    font-weight: 600;
-}
-.detail-rg{
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  1fr ;
-    border-bottom: 1px solid black;
-    color: #ed0080;
-}
-.detail-rg-1, .detail-rg-2, .detail-rg-3, .detail-rg-4, .detail-rg-5 {
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns:  1fr 1fr ;
-    border-bottom: 1px solid black;
-}
-
-/*box-right--bang gia*/
-.detail-right-bottom{
-    background: linear-gradient(90deg,#ed0080 0,#be3b98 100%);
-    margin: 20px 60px;
-padding: 0px 10px; /*ben trong*/
-}
-.detail-rg-bt-text{
-    display: flex;
-}
-.detail-rg-bt-text p{
-    padding: 10px;
-    padding-left: 10px;
-    color: #fff;
-}
-.etail-rg-bt-text-B{
-    font-size: 1.5em;
-    font-weight: 600;
-}
-.etail-rg-bt-text-N{
-    text-decoration: line-through;
-}
-/*box-right--bang gia--input*/
-.detail-rg-bt-input{
-    display: grid;
-    row-gap: 10px;
-    padding-bottom: 20px;
-}
-.detail-rg-bt-input input{
-   border-radius: 5px;
-   border: none;
-   height: 35px;
-}
-/*box-right--cac danh muc*/
-.detail-right-bottom-2{
-    margin: 20px 60px;
-    padding: 0px 10px; /*ben trong*/
-}
-/**/
-.detail-rg-bt-input a input{
-   width: 300px;
-}
-/**/
-.detail-rg-bt-text-2 p{
-    padding: 10px 0px;
-}
-.detail-rg-bt-text-2 p i{
-    padding: 0px 10px;
-}
-/*-----------------------------------------------------------------------*/
-.dat-tour-1{
-    margin-top: 50px;
-    background-color: #8d8d8d;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    height: 200px;
-}
-.dat-tour-1-img{
-    background-color: #e7a3c1;
-    width: 100%;
-    height: 200px;
-}
-.dat-tour-1-img img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.dat-tour-1-right{
-    background-color: rgb(255, 255, 255);
-}
-/**/
-.dat-tour-1-right{
-   width: 100%;
-   height: auto;
-
-}
-.right-table{
-    border: 1px solid black;
-    margin: 30px 30px;
-
-}
-.right-table-top1{
-    border-bottom: 1px solid black;
-    padding: 10px 10px;
-}
-.right-table-top2{
-   display: flex;
-   justify-content: space-between;
-   padding: 20px 10px;
-}
-.right-table-top2 li{
-    list-style: none;
-}
-.right-table-top2 a{
-    text-decoration: none;
-    color: #484747;
-}
-
-.dat-tour-4{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-
-}
-.dat-tour-4 label{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0px 0px;
-}
-.dat-tour-4 input{
-    padding: 10px 80px;
-}
+    /*-----------------------------------------footer---------------------------------------------------------------------------------------------------------------------------*/
 
 
+    footer {
+        clear: both;
+        background-color: #ffffff;
+        width: 100%;
+        height: auto;
+        border-top: 1px solid #ed0080;
+    }
 
-.dat-tour-7-input{
-  padding: 20px 300px;
-}
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 15px 0px;
+    }
 
-.dat-tour-7-input1{
+    .footer-menu label {
+        display: flex;
+        justify-content: space-between;
+        color: #ed0080;
+        font-weight: 600;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-    padding: 0px 300px;
-}
-.dat-tour-7 button{
-   margin-left: 550px;
-margin-top: 30px;
-   padding: 5px 15px;
-   background-color: #ed0080;
-   color: #fff;
-   border: none;
-}
+    .footer-menu li {
+        list-style: none;
+        /*bo dau cham*/
+    }
+
+    .footer-menu li a {
+        text-decoration: none;
+        /*bo gach ngang*/
+        color: #000000;
+        font-size: 0.8em;
+    }
+
+    .footer__newletter h4 {
+        /**/
+        color: #ed0080;
+        padding-bottom: 10px;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer__newletter p {
+        /**/
+        font-size: 0.6em;
+        color: rgb(0, 0, 0);
+        padding-bottom: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer__newletter input {
+        padding: 10px;
+        border: 1px solid;
+        margin: 20px 0px;
+        outline: none;
+        /*bo duong vien khung input*/
+        font-variant: small-caps;
+    }
+
+    .footer__newletter input::placeholder {
+        font-variant: small-caps;
+    }
+
+    .footer__newletter button {
+        text-align: center;
+        padding-bottom: 10px;
+        margin: 20px 0px;
+        padding: 10px 10px;
+        color: rgb(255, 255, 255);
+        background-color: #ed0080;
+    }
+
+    .footer-menu-high {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    /*----------------------------------------CHI TIET--------------------------------*/
+    /*box tong*/
+    .detali-box {
+        display: grid;
+        grid-template-columns: 1fr 450px;
+    }
+
+    /*box-left--tieu de*/
+    .box-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #ffffff;
+    }
+
+    .box-top h1 {
+        text-align: left;
+        padding: 10px 0px;
+        font-size: 1.5em;
+    }
+
+    /* 2 box left and right big*/
+    .box-left {
+        background-color: #ffffff;
+    }
+
+    .box-right {
+        /* background: #ed0080; */
+        background-color: rgb(255, 255, 255);
+        /* background: linear-gradient(90deg,#ed0080 0,#be3b98 100%); */
+
+    }
+
+    /*box left--5 ngoi sao va danh gia*/
+    .detali-box-icon {
+        display: flex;
+    }
+
+    .detali-box-icon p {
+        padding: 0px 20px;
+    }
+
+    .detali-box-icon i {
+        color: rgb(255, 204, 0);
+    }
+
+    /*box left--img-lon va nho*/
+    .detail-img-tall {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px 20px;
+    }
+
+    .detail-img-tall img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .detail-img-small {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0px 20px;
+        column-gap: 20px;
+    }
+
+    .detail-img-small img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    /*box left-- chi tiet 1*/
+    .detail-left-bottom {
+        padding: 0px 20px;
+    }
+
+    .detail-lt {
+        border-bottom: 2px solid #ed0080;
+        padding-top: 30px;
+
+    }
+
+    .detail-lt p {
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .detail-lt i {
+        color: #ed0080;
+    }
+
+    .detail-lt-1, .detail-lt-2, .detail-lt-3, .detail-lt-4 {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 100px 1fr;
+
+    }
+
+    .detail-lt-1 p, .detail-lt-2 p, .detail-lt-3 p, .detail-lt-4 p {}
+
+    /*box left-- chi tiet 2*/
+    .detail-left-bottom-2 {
+        padding: 10px 20px;
+    }
+
+    /*box-left--phone-input*/
+    .detail-left-bottom-phone {
+        padding: 10px 20px;
+    }
+
+    .detail-lt-bot-phone-inp {
+        display: flex;
+        padding-top: 15px;
+    }
+
+    .detail-lt-bot-phone-inp-1 ::placeholder {
+        padding: 0px 20px;
+    }
+
+    .detail-lt-bot-phone-inp-1 input {
+        width: 400px;
+        height: 50px;
+        background-color: #ece7e7;
+        border: none;
+    }
+
+    .detail-lt-bot-phone-inp-2 input {
+        width: 100px;
+        height: 50px;
+        background-color: #ed0080;
+        border: none;
+        color: #fff;
+    }
+
+    /*b0x-left--chi tiet 3*/
+    .detail-left-bottom-3 p {
+        padding: 5px 0px;
+    }
+
+    .detail-lt-bot-h1 {
+        padding: 10px 20px;
+
+    }
+
+    .detail-lt-bot-h1 h2 {
+        border-bottom: 2px solid #ed0080;
+    }
+
+    .detail-lt-bot-P {
+        padding: 0px 30px;
+    }
+
+    .detail-lt-bot-p {
+        padding: 10px 60px;
+    }
+
+
+    /*box-right--cai bang*/
+    .detail-right {
+
+        border: 1px solid black;
+        margin: 20px 60px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
+
+    .detail-right .b-strong {
+        font-weight: 600;
+    }
+
+    .detail-rg {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 1fr;
+        border-bottom: 1px solid black;
+        color: #ed0080;
+    }
+
+    .detail-rg-1, .detail-rg-2, .detail-rg-3, .detail-rg-4, .detail-rg-5 {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid black;
+    }
+
+    /*box-right--bang gia*/
+    .detail-right-bottom {
+        background: linear-gradient(90deg, #ed0080 0, #be3b98 100%);
+        margin: 20px 60px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
+
+    .detail-rg-bt-text {
+        display: flex;
+    }
+
+    .detail-rg-bt-text p {
+        padding: 10px;
+        padding-left: 10px;
+        color: #fff;
+    }
+
+    .etail-rg-bt-text-B {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .etail-rg-bt-text-N {
+        text-decoration: line-through;
+    }
+
+    /*box-right--bang gia--input*/
+    .detail-rg-bt-input {
+        display: grid;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .detail-rg-bt-input input {
+        border-radius: 5px;
+        border: none;
+        height: 35px;
+    }
+
+    /*box-right--cac danh muc*/
+    .detail-right-bottom-2 {
+        margin: 20px 60px;
+        padding: 0px 10px;
+        /*ben trong*/
+    }
+
+    /**/
+    .detail-rg-bt-input a input {
+        width: 300px;
+    }
+
+    /**/
+    .detail-rg-bt-text-2 p {
+        padding: 10px 0px;
+    }
+
+    .detail-rg-bt-text-2 p i {
+        padding: 0px 10px;
+    }
+
+    /*-----------------------------------------------------------------------*/
+    .dat-tour-1 {
+        margin-top: 50px;
+        background-color: #8d8d8d;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        height: 200px;
+    }
+
+    .dat-tour-1-img {
+        background-color: #e7a3c1;
+        width: 100%;
+        height: 200px;
+    }
+
+    .dat-tour-1-img img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .dat-tour-1-right {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /**/
+    .dat-tour-1-right {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .right-table {
+        border: 1px solid black;
+        margin: 30px 30px;
+
+    }
+
+    .right-table-top1 {
+        border-bottom: 1px solid black;
+        padding: 10px 10px;
+    }
+
+    .right-table-top2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
+
+    .right-table-top2 li {
+        list-style: none;
+    }
+
+    .right-table-top2 a {
+        text-decoration: none;
+        color: #484747;
+    }
+
+    .dat-tour-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .dat-tour-4 label {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px 0px;
+    }
+
+    .dat-tour-4 input {
+        padding: 10px 80px;
+    }
+
+
+
+    .dat-tour-7-input {
+        padding: 20px 300px;
+    }
+
+    .dat-tour-7-input1 {
+
+        padding: 0px 300px;
+    }
+
+    .dat-tour-7 button {
+        margin-left: 550px;
+        margin-top: 30px;
+        padding: 5px 15px;
+        background-color: #ed0080;
+        color: #fff;
+        border: none;
+    }
 }
 
 /*
@@ -3494,7 +4064,7 @@ body{
 
 
 /*------------------------------------box san pham----------------------------------------**/
-.boxsp{
+.boxsp {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -3503,7 +4073,7 @@ body{
     overflow: hidden;
 }
 
-.boxsp img{
+.boxsp img {
     width: 100%;
     height: 180px;
     padding: 0px 0px;
@@ -3511,10 +4081,12 @@ body{
     object-fit: cover;
     transition: scale 500ms;
 }
-.boxsp:hover img{
+
+.boxsp:hover img {
     scale: 110%;
 }
-.boxp-text-1 a{
+
+.boxp-text-1 a {
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -3522,45 +4094,45 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.boxsp>div{
+.boxsp>div {
     padding: 3px 0px;
 }
 
-.boxp-text-1 a{
+.boxp-text-1 a {
     padding: 0px 10px;
 }
 
-.boxp-text-2 a{
-    color:#00b6f3;
+.boxp-text-2 a {
+    color: #00b6f3;
 }
 
 .boxp-text-2 i {
-    color:#00b6f3;
+    color: #00b6f3;
     padding: 0px 5px;
 }
 
-.boxsp:hover{
+.boxsp:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.boxp-text-3 p{
+.boxp-text-3 p {
     padding: 0px 10px;
     color: #8d8d8d;
 }
 
-.boxp-text-3 span{
+.boxp-text-3 span {
     font-weight: 700;
     color: red;
     padding-left: 50px;
 }
 
 /*-----------------------font icon Nav -------------------------------------------------------*/
-.category-list i{
+.category-list i {
     padding-left: 10px;
     color: #f6f0f0;
 }
 
-.category-list-one i{
+.category-list-one i {
     padding-left: 10px;
     color: #f6f0f0;
 }
@@ -3570,33 +4142,35 @@ body{
     color: #f6f0f0;
 }
 
-.category-list-three i{
+.category-list-three i {
     padding-left: 10px;
     color: #f6f0f0;
 }
 
-.category-list-four i{
+.category-list-four i {
     padding-left: 10px;
     color: #f6f0f0;
 }
 
-.fa-bars{
+.fa-bars {
     padding-right: 10px;
     color: #f6f0f0;
 }
-.fa-search{
+
+.fa-search {
     padding-left: 10px;
     color: #f6f0f0;
 }
 
 /*------------------------------ĐỊA ĐIỂM SĂN ĐÓN----------------------------------------------------------*/
-.diadiem{
+.diadiem {
     width: 100%;
     height: 250px;
     position: relative;
     overflow: hidden;
 }
-.diadiem p{
+
+.diadiem p {
     background-color: #ed0080;
     width: 40%;
     height: 30px;
@@ -3610,38 +4184,42 @@ body{
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
 }
-.diadiem img{
+
+.diadiem img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     transition: scale 500ms;
 }
-.diadiem:hover img{
-   scale: 150% ;
+
+.diadiem:hover img {
+    scale: 150%;
 }
 
 
 /*---------------------------------gallery-----------------------------------------------------------------------------------------------------------------------------*/
-.column img{
+.column img {
     opacity: 0.7;
     transition: opacity 0.3s ease-in-out;
 }
 
-.column img:hover{
+.column img:hover {
     border: none;
     opacity: 1;
 }
+
 /*--------------------------------------DAT TOUR-------------------------------------*/
-.dat-tour-2{
+.dat-tour-2 {
     margin-top: 30px;
     padding: 20px 0px;
     color: rgb(234, 28, 28);
 }
 
-.dat-tour-3{
+.dat-tour-3 {
     margin-top: 20px;
 }
-.dat-tour-3 h1{
+
+.dat-tour-3 h1 {
     text-align: center;
     padding: 10px 0px;
 }
@@ -3657,59 +4235,71 @@ table, th, td {
     color: #858383;
 }
 
-h1{
+h1 {
     padding: 30px 0px;
-   text-align: center;
+    text-align: center;
 }
+
 /*-----------------------------------------DAT TOUR----------------------------*/
-.dat-tour-5{
+.dat-tour-5 {
     display: grid;
-    justify-items: end; /*canh qua phai*/
+    justify-items: end;
+    /*canh qua phai*/
     padding: 20px 0px;
     border-top: 1px solid rgb(196, 195, 195);
     border-bottom: 1px solid rgb(196, 195, 195);
 }
-.dat-tour-5 a{
+
+.dat-tour-5 a {
     text-decoration: none;
     color: #ed0080;
 }
-.dat-tour-5-input input{
+
+.dat-tour-5-input input {
     margin: 5px 0px;
     padding: 5px 25px;
     border: 1px solid rgb(211, 211, 211);
 }
-.dat-tour-5-input button{
+
+.dat-tour-5-input button {
     margin: 5px 0px;
     padding: 7px 25px;
-   background-color: #0066b2;
-   color: #fff;
-   border: none;
+    background-color: #0066b2;
+    color: #fff;
+    border: none;
 }
-.dat-tour-5-text{
+
+.dat-tour-5-text {
     color: red;
     font-size: 0.8em;
 }
+
 /*-------------------------------------------------------------------------*/
-.dat-tour-6{
+.dat-tour-6 {
     display: grid;
-    justify-items: end; /*canh qua phai*/
+    justify-items: end;
+    /*canh qua phai*/
 }
-.dat-tour-6 a{
+
+.dat-tour-6 a {
     font-size: 1.5em;
     font-weight: 500;
     text-decoration: none;
     color: #ed0080;
 }
+
 /*---------------------------------------------------------------------------*/
 .dat-tour-7 {
     width: 100%;
     height: auto;
     padding: 0px 0px;
 }
-.dat-tour-7 h1{
+
+.dat-tour-7 h1 {
     text-align: center;
 }
-.dat-tour-7 label{
-  color: #000000;
-  padding: 0px 0px;
+
+.dat-tour-7 label {
+    color: #000000;
+    padding: 0px 0px;
 }
